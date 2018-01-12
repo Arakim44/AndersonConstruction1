@@ -451,11 +451,60 @@ template {
 }
 
 body{
+    font-family: 'Open Sans', 'HelveticaNeue', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    color: #333;
+}
 
+img {
+    max-width: 100%;
+    height: auto;
 }
 
 .banner {
-    position: relative; 
-   color: red;
-   width: 100%;
+    position: relative;
 }
+
+.banner__text-content {
+       background-color: rgba(0,0,0,0.5);
+       -webkit-transform: translateY(-50%);
+               transform: translateY(-50%);
+       position: absolute;
+       top: 50%;
+       left: 0;
+       width: 100%;
+       text-align:center;
+   }
+
+.banner__title{
+       font-weight: 300;
+       color: #FFF;
+      font-size: 1.1rem;
+      margin:0;
+
+      
+
+      
+   }
+
+.banner__subtitle{
+    font-weight: 200;
+    color: #FFF;
+    font-size: 2.9rem;
+    margin: 0;
+
+   }
+
+.banner__description{
+       font-size: 1.5rem;
+       color: #FFF;
+   }
+
+.btn {
+    background-color:#a3273c;
+    color: #FFF;
+    text-decoration: none;
+    padding: .75rem 1.2rem;
+    display:inline-block;
+}
+
+/* @import "modules/_cool-btn"; */
