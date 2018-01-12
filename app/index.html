@@ -26,7 +26,14 @@
   </header>
 
   <div class="banner"> <!--large-hero on the example-->
-    <img src="assets/images/banner-large.jpg">
+    
+    <picture>
+      <source srcset="assets/images/banner-large.jpg" media="(min-width:1200px)">
+      <source srcset="assets/images/banner-medium.jpg" media="(min-width:990px)">
+      <source srcset="assets/images/banner-small.jpg 990w, assets/images/banner-small-hi-dpi.jpg 1697w " media="(min-width:640px)">
+      <img srcset="assets/images/banner-smaller.jpg 640w, assets/images/banner-smaller-hi-dpi.jpg 1418w" alt="interior">
+    </picture>
+
     <div class="banner__text-content">
       <h1 class="banner__title">Anderson Construction</h1>
       <h2 class="banner__subtitle">David Anderson - Owner</h2>
