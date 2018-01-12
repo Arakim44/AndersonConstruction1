@@ -1,31 +1,37 @@
 $thick : 3px;
 $pad : 0.7em;
 $extra : calc(#{$pad} * 1.2);
-$color : #f26522;
+$color : $mainRed;
 
-
-a {
-  position: fixed;
-  cursor: pointer;
-  top: 50vh;
-  left: 50%;
-  color: white;
-  transform: translate3d(-50%,-50%,0);
-  padding: $pad $extra;
-  display: inline-block;
-  border: $thick solid transparent;
-  position: relative;
-  font-size: 1.5em;
-  letter-spacing: 0.07em;
+.cool-btn {
   
-  .text {
-    // padding: 0 0.3em;
+  
+  &__link {
+    position: fixed;
+    cursor: pointer;
+    /* top: 50vh; */
+    /* left: 25%; */
+    /*figure out how to center*/
+    color: #FFF;
+    transform: translate3d(-50%,-50%,0);
+    padding: $pad $extra;
+    display: inline-block;
+    border: $thick solid transparent;
+    position: relative;
+    font-size: 1.5em;
+    /* letter-spacing: 0.07em; */
     font-family: proxima-nova;
-    transform: translate3d(0,$pad,0);
-    display: block;
-    transition: transform 0.4s cubic-bezier(.2,0,0,1) 0.4s;
-  }
+    
+    .text {
+      padding: 0 0.3em;
+      transform: translate3d(0,$pad,0);
+      display: block;
+      transition: transform 0.4s cubic-bezier(.2,0,0,1) 0.4s;
+    }
+    
   
+}
+
   &:after {
     position: absolute;
     content: '';

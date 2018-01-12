@@ -1,0 +1,10 @@
+.wrapper {
+    padding-left:18px;
+    padding-right:18px;
+
+    &__banner {
+        height: 100%;
+        width: auto;
+        padding: 10px
+    }
+}

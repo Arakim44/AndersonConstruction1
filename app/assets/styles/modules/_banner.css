@@ -2,40 +2,55 @@
     position: relative; 
 
    &__text-content {
-       background-color: rgba(0,0,0,0.5);
+       background-color: rgba(0,0,0, 0.5);
        transform: translateY(-50%);
        position: absolute;
        top: 50%;
        left: 0;
        width: 100%;
        text-align:center;
-   }
+       padding: 1.5rem 0 0;
 
+       @mixin atLarge{
+           padding: 4rem 0 0;
+       }
 
-   &__title{
-       font-weight: 300;
-       color: #FFF;
-      font-size: 1.1rem;
+    }
+    
+    
+    &__title{
+      color:#FFF;
+      font-weight: 300;
+      font-size: 1.7rem;
+      display:inline-block;
+      white-space:hidden;
+      overflow:hidden;
+      text-overflow:ellipsis;
       margin:0;
-
+      text-shadow: 2px 2px 0 rgba(0,0,0,.1);
+      padding: 3px 0 3px;
+      border-top: 1px solid rgba(255,255,255,0.6);
+      border-bottom: 1px solid rgba(255,255,255,0.6);
+      
       @mixin atSmall {
-        font-size: 2rem;
-      }
-
-      @mixin atMedium {
-        font-size: 3.2rem;
+          font-size: 2.3rem;
+        }
+        
+        @mixin atMedium {
+            font-size: 3.2rem;
       }
 
       @mixin atLarge {
-        font-size: 4.8rem;
+        font-size: 4rem;
       }
    }
 
    &__subtitle{
-    font-weight: 200;
-    color: #FFF;
-    font-size: 1.1rem;
+    font-weight: 300;
+    color:#FFF;
+    font-size: 1.2rem;
     margin: 0;
+    padding-top: 5px;
 
     @mixin atSmall {
         font-size: 2.9rem;
@@ -44,7 +59,24 @@
    }
 
    &__description{
-       font-size: 1.5rem;
-       color: #FFF;
+    color: #FFF;
+    font-size: 1rem;
+    font-weight: 100;
+    text-shadow: 2px 2px 0 rgba(0,0,0,.1);
+    max-width: 50rem;
+    margin-left: auto;
+    margin-right: auto;
+   }
+
+   @mixin atSmall {
+       font-size: 1.3rem;
+   }
+
+   @mixin atMedium {
+       font-size: 1.8rem;
+   }
+
+   @mixin atLarge {
+       font-size: 2rem;
    }
 }
