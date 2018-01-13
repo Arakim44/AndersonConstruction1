@@ -1,0 +1,10 @@
+.icons {
+    max-width: 40px;
+    background-color: $mainYellow;
+    padding: 4px;
+    border-radius:15px;   
+
+    &__bigger {
+        padding: 6.5px;
+    }
+}

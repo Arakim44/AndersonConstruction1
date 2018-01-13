@@ -1,5 +1,10 @@
 .banner {
+    border-bottom: 10px solid $mainRed;
     position: relative; 
+
+    &__image {
+        display: block;
+    }
 
    &__text-content {
        background-color: rgba(0,0,0, 0.5);
@@ -59,6 +64,7 @@
    }
 
    &__description{
+    border: none;   
     color: #FFF;
     font-size: 1rem;
     font-weight: 100;

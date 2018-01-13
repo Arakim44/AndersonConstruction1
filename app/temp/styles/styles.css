@@ -460,9 +460,19 @@ img {
     height: auto;
 }
 
+* {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
 .banner {
+    border-bottom: 10px solid #a3273c;
     position: relative;
 }
+
+.banner__image {
+        display: block;
+    }
 
 .banner__text-content {
        background-color: rgba(0,0,0, 0.5);
@@ -539,6 +549,7 @@ img {
     }
 
 .banner__description{
+    border: none;   
     color: #FFF;
     font-size: 1rem;
     font-weight: 100;
@@ -591,12 +602,135 @@ img {
 /* @import "modules/_cool-btn"; */
 
 .wrapper {
+    /* background-color: green; */
+    overflow: hidden;
     padding-left:18px;
     padding-right:18px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .wrapper__banner {
         height: 100%;
         width: auto;
         padding: 10px
+    }
+
+.wrapper--medium {
+        max-width: 976px;
+    }
+
+.wrapper .wrapper {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+.page-section {
+
+    padding:1.2rem 0;
+}
+
+@media (min-width: 800px) {
+
+.page-section {
+        padding: 4.5rem 0
+}
+    }
+
+.page-section__red {
+        background-color: #a3273c;
+        color: #FFF;
+    }
+
+.icons {
+    max-width: 40px;
+    background-color: #f7b71e;
+    padding: 4px;
+    border-radius:15px;
+}
+
+.icons__bigger {
+        padding: 6.5px;
+    }
+
+.headline {
+    color: #a3273c;
+    font-weight: 300;
+    font-size:1.9rem;
+
+}
+
+@media (min-width: 800px) {
+
+.headline {
+        font-size: 2.875rem
+
+}
+    }
+
+.headline--centered {
+        text-align: center;
+    }
+
+.headline--yellow {
+        color: #f7b71e;
+    }
+
+.headline--small {
+
+        font-size: 1.2rem;
+    }
+
+@media (min-width: 800px) {
+
+.headline--small {
+            font-size: 1.875rem
+    }
+    }
+
+.headline--narrow {
+        max-width: 500px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+.headline--light {
+        font-weight: 100;
+    }
+
+.headline--b-margin-small {
+        margin-bottom: .5em;
+    }
+
+.headline--b-margin-large {
+        margin-bottom: 1.6em;
+    }
+
+.row::after {
+        content:"";
+        clear:both;
+        display:table;
+    }
+
+.row--gutters {
+        margin-right: -65px
+    }
+
+.row--gutters > div {
+        padding-right:65px;
+    }
+
+@media (min-width: 800px) {
+        
+                .row__medium-4 {
+                    float: left;
+                    width: 33.33%;
+                }
+                
+                
+                .row__medium-8 {
+                    float:left;
+                    width:66.66%;
+                }
     }
