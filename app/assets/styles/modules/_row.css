@@ -9,6 +9,18 @@
 
     &--gutters > div {
         padding-right:65px;
+
+        @mixin atSmall{
+            padding-right: 30px;
+        }
+    }
+
+    &__b-margin-until-medium {
+        margin-bottom: 1rem;
+
+        @mixin atMedium {
+            margin-bottom: 0;
+        }
     }
 
 
