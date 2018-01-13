@@ -45,4 +45,15 @@
         margin-bottom: 1.6em;
     }
 
+    &--drop-cap {
+        float:left;
+        font-family: georgia;
+        font-size: 75px;
+        line-height: 60px;
+        padding-top: 4px;
+        padding-right: 8px;
+        padding-left: 3px;
+
+    }
+
 }
