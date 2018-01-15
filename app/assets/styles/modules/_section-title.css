@@ -17,6 +17,11 @@
 
     }
 
+    &--dark {
+        color: $mainRed;
+        font-weight: 350;
+    }
+
     @mixin atSmall {
         font-size: 2.25rem;
     }
