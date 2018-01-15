@@ -1,0 +1,50 @@
+.section-title {
+    /* margin: 0; */
+    font-size: 1.725rem;
+    font-weight: 200;
+    text-align: center;
+    padding-bottom:1rem;
+
+    &__no-project{
+        font-size: 1.25rem;
+        font-weight: 200;
+        text-align: center;
+        padding-bottom:1rem;
+
+        @mixin atSmall {
+            font-size: 1.725rem;
+        }
+
+    }
+
+    @mixin atSmall {
+        font-size: 2.25rem;
+    }
+
+    @mixin atMedium {
+        font-size: 2.25rem;
+    }
+
+    @mixin atLarge {
+        font-size: 2.725rem;
+    }
+
+    strong{
+        font-weight:500;
+    }
+
+    &__icon {
+        display:block;
+        margin-left:auto;
+        margin-right:auto;
+        margin-bottom: .6rem;
+
+        @mixin atSmall {
+            margin-right:.75rem;
+            margin-left: 0;
+            display: inline-block;
+            margin-bottom:-.4rem;
+
+        }
+    }
+}
