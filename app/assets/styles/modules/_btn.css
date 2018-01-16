@@ -6,7 +6,7 @@
     display:inline-block;
 
     &__yellow {
-        background-color:$mainYellow;
+        background-color:$mainBlue;
     }
 
     &__large {

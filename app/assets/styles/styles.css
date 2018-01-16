@@ -15,3 +15,6 @@
 @import "modules/_feature-item";
 @import "modules/_members";
 @import "modules/_site-footer";
+@import "modules/_site-header";
+@import "modules/_main-logo";
+@import "modules/_primary-nav";
