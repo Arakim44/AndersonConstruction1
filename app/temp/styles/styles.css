@@ -470,6 +470,8 @@ a {
 }
 
 .banner {
+
+    /* background-color: rgba(0,0,0, 0.6); */
     border-bottom: 10px solid #a3273c;
     position: relative;
 }
@@ -479,16 +481,26 @@ a {
     }
 
 .banner__text-content {
-       background-color: rgba(0,0,0, 0.6);
-       -webkit-transform: translateY(-50%);
+       padding-top: 90px;
+       /* margin-top:-6.5px; */      
+       -webkit-transform: translateY(-50%);      
                transform: translateY(-50%);
        position: absolute;
        top: 50%;
        left: 0;
        width: 100%;
        text-align:center;
-       padding: 1.5rem 0 0;
+       /* padding: 1.5rem 0 0; */
+       background-color: rgba(0,0,0, 0.6);
 
+    }
+
+@media (min-width: 768px) {
+
+.banner__text-content {
+           padding-top:60px
+
+    }
     }
 
 @media (min-width: 1010px) {
@@ -566,7 +578,8 @@ a {
 @media (min-width: 530px) {
 
 .banner {
-       font-size: 1.3rem
+       font-size: 1.3rem;
+       padding-top:60px
 }
     }
 
@@ -751,7 +764,7 @@ a {
 
 .headline {
     color: #a3273c;
-    font-weight: 300;
+    font-weight: 250;
     font-size:1.9rem;
 
     /* drop cap** */
@@ -804,7 +817,7 @@ a {
     }
 
 .headline--light {
-        font-weight: 100;
+        font-weight: 200;
     }
 
 .headline--b-margin-small {
@@ -1222,12 +1235,19 @@ a {
     }
 
 .site-header {
-    padding:10px 0;
+    padding:35px;
     position:absolute;
     width: 100%;
     z-index: 2;
-    background-color: rgba(187,225,244,.7);
+    background-color:#bbe1f4;
 }
+
+@media (min-width: 768px) {
+
+.site-header {
+        padding:10px
+}
+    }
 
 .site-header__btn-container {
         float: right;
@@ -1239,6 +1259,50 @@ a {
         background-color: #bbe1f4;
         padding: 5px;
 
+        /* to center the logo */
+        left: 50%;
+        -webkit-transform : translateX(-50%) scale(.8);
+                transform : translateX(-50%) scale(.8);
+        -webkit-transform-origin: 50% 0%;
+                transform-origin: 50% 0%;
+
+    }
+
+@media (min-width: 768px) {
+
+.site-header__logo {
+            left: auto;
+            -webkit-transform:translateX(0);
+                    transform:translateX(0)
+
+    }
+    }
+
+.site-header__menu-icon {
+        width:50px;
+        height: 50px;
+        background-color:#FFF;
+        position: absolute;
+        top: 10px;
+        right:20px;
+    }
+
+@media (min-width: 768px) {
+
+.site-header__menu-icon {
+            display: none
+    }
+    }
+
+.site-header__menu-content {
+        display: none;
+    }
+
+@media (min-width: 768px) {
+
+.site-header__menu-content {
+            display:block
+    }
     }
 
 .main-logo {
@@ -1272,6 +1336,13 @@ a {
         text-decoration: none;
         display:block;
         padding:12px 0;
+        -webkit-transition: color 0.1s, background-color 0.1s;
+        transition: color 0.1s, background-color 0.1s;
+    }
+
+.primary-nav a:hover, .primary-nav a:focus, .primary-nav a:active {
+        color: #FFF;
+        text-decoration: none;
     }
 
 .call-us {
@@ -1297,7 +1368,8 @@ a {
         display:table;
     }
 
-.call-us li{
+.call-us li{ 
+        /* text-align: center; */
         list-style: none;
         float:left;
         padding-right:20px;

@@ -3,6 +3,8 @@
         float: right;
     }
 
+    
+
     ul {
         margin:0;
         padding:0;
@@ -22,6 +24,12 @@
         text-decoration: none;
         display:block;
         padding:12px 0;
+        transition: color 0.1s, background-color 0.1s;
+    }
+
+    a:hover, a:focus, a:active {
+        color: #FFF;
+        text-decoration: none;
     }
 
 

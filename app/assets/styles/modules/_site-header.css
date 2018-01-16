@@ -1,9 +1,14 @@
 .site-header {
-    padding:10px 0;
+    padding:35px;
     position:absolute;
     width: 100%;
     z-index: 2;
-    background-color: rgba($mainBlue,.7);
+    background-color:$mainBlue;
+
+    
+    @mixin atMedium {
+        padding:10px;
+    }
 
     &__btn-container {
         float: right;
@@ -15,5 +20,40 @@
         background-color: $mainBlue;
         padding: 5px;
 
+        /* to center the logo */
+        left: 50%;
+        transform : translateX(-50%) scale(.8);
+        transform-origin: 50% 0%;
+
+        @mixin atMedium {
+            left: auto;
+            transform:translateX(0)
+        }
+
+    }
+
+
+    &__menu-icon {
+        width:50px;
+        height: 50px;
+        background-color:#FFF;
+        position: absolute;
+        top: 10px;
+        right:20px;
+
+        @mixin atMedium {
+            display: none;
+        }
+    }
+
+
+
+
+    &__menu-content {
+        display: none;
+
+        @mixin atMedium {
+            display:block;
+        }
     }
 }
