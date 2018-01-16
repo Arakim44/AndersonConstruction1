@@ -479,7 +479,7 @@ a {
     }
 
 .banner__text-content {
-       background-color: rgba(0,0,0, 0.5);
+       background-color: rgba(0,0,0, 0.6);
        -webkit-transform: translateY(-50%);
                transform: translateY(-50%);
        position: absolute;
@@ -554,7 +554,7 @@ a {
 
 .banner__description{
     border: none;   
-    color: #FFF;
+    color:#bbe1f4;
     font-size: 1rem;
     font-weight: 100;
     text-shadow: 2px 2px 0 rgba(0,0,0,.1);
@@ -1222,14 +1222,23 @@ a {
     }
 
 .site-header {
+    padding:10px 0;
     position:absolute;
     width: 100%;
     z-index: 2;
-    background-color: #bbe1f4;
+    background-color: rgba(187,225,244,.7);
 }
 
 .site-header__btn-container {
         float: right;
+    }
+
+.site-header__logo {
+        position:absolute;
+        top:0;
+        background-color: #bbe1f4;
+        padding: 5px;
+
     }
 
 .main-logo {
@@ -1258,7 +1267,38 @@ a {
     }
 
 .primary-nav a{
-        color:#FFF;
-        font-weight: 300;
+        color:#a3273c;
+        font-weight: 500;
         text-decoration: none;
+        display:block;
+        padding:12px 0;
+    }
+
+.call-us {
+    background-color: #a3273c; 
+    color:#FFF;
+    padding: .5rem 0;    
+    /* margin: 0px; */
+    /* padding: 0px; */
+    font-size: 13px;
+    /* display: inline-block; */
+    text-align:center;
+
+}
+
+.call-us ul {
+        margin:0;
+        padding:0;
+    }
+
+.call-us ul::after {
+        content:"";
+        clear:both;
+        display:table;
+    }
+
+.call-us li{
+        list-style: none;
+        float:left;
+        padding-right:20px;
     }
