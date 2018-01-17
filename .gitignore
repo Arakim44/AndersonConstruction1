@@ -10,7 +10,6 @@
 *~
 *.sass-cache
 node_modules/
-Person.js
 .tmp/
 
 # OS or Editor folders

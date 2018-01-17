@@ -3,11 +3,21 @@
     position:absolute;
     width: 100%;
     z-index: 2;
-    background-color:$mainBlue;
+    transition: background-color .3s linear;
+    /* background-color:$mainBlue; */
+     
+
+    &--is-expanded {
+        background-color:$mainBlue; 
+    }
+
+    
+    
 
     
     @mixin atMedium {
         padding:10px;
+        background-color:rgba($mainBlue,.7);
     }
 
     &__btn-container {
@@ -19,7 +29,8 @@
         top:0;
         background-color: $mainBlue;
         padding: 5px;
-
+        /* border-radius: 20px; */
+        
         /* to center the logo */
         left: 50%;
         transform : translateX(-50%) scale(.8);
@@ -34,12 +45,39 @@
 
 
     &__menu-icon {
-        width:50px;
-        height: 50px;
-        background-color:#FFF;
+        width:40px;
+        height: 35px;
         position: absolute;
-        top: 10px;
-        right:20px;
+        z-index: 10;
+        top: 15px;
+        right:35px;
+        background-color: $mainRed;
+        
+
+        &__top {
+            position: absolute;
+            top:0;
+            left:0;
+            width:40px;
+            height:5px;
+            background-color:#FFF;
+        }
+        &__middle {
+            position: absolute;
+            top:15px;
+            left:0;
+            width:40px;
+            height:5px;
+            background-color:#FFF;
+        }
+        &__bottom {
+            position: absolute;
+            bottom:0;
+            left:0;
+            width:40px;
+            height:5px;
+            background-color:#FFF;
+        }
 
         @mixin atMedium {
             display: none;
@@ -50,10 +88,28 @@
 
 
     &__menu-content {
-        display: none;
+        opacity:0;
+        transform: scale(2);
+        transition: all .3 ease-out;
+        position: relative;
+        z-index:-10;
+        padding-top:55px;
+        /* float: left; */
+        left:-35%;
+        /* text-align:center; */
 
         @mixin atMedium {
-            display:block;
+            left:0;
+            opacity:1;
+            z-index:1;
+            padding-top:0;
+            transform: scale(1);
+        }
+
+        &--is-visible {
+            opacity: 1;
+            z-index: 1;
+            transform:scale(1);
         }
     }
 }

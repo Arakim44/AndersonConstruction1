@@ -1,4 +1,5 @@
 .primary-nav {
+    
     &--pull-right {
         float: right;
     }
@@ -10,11 +11,23 @@
         padding:0;
         @mixin clearfix;
     }
-
+    
     li{
+        left: 50%;
         list-style: none;
-        float:left;
-        padding-right:20px;
+        text-align: center;
+        /* margin-right:-18px; */
+        
+        /* left: 50%; */
+        /* transform : translateX(-70%) ;
+        transform-origin: 50% 0%; */
+
+
+
+        @mixin atMedium {
+            float:left;
+            padding-right:20px;
+        }
     }
 
 
