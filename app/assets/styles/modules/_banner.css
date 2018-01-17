@@ -2,7 +2,8 @@
 
     /* background-color: rgba(0,0,0, 0.6); */
     border-bottom: 10px solid $mainRed;
-    position: relative; 
+    position: relative;
+    background-color:$mainBlue; 
 
     &__image {
         display: block;

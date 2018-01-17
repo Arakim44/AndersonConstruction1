@@ -474,6 +474,7 @@ a {
     /* background-color: rgba(0,0,0, 0.6); */
     border-bottom: 10px solid #a3273c;
     position: relative;
+    background-color:#bbe1f4;
 }
 
 .banner__image {
