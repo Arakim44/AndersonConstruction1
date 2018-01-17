@@ -1,13 +1,15 @@
 .banner {
 
     /* background-color: rgba(0,0,0, 0.6); */
+    border-top: 10px solid $mainRed;
     border-bottom: 10px solid $mainRed;
     position: relative;
     background-color:$mainBlue; 
 
     &__image {
         display: block;
-    }
+        }
+    
 
    &__text-content {
        padding-top: 90px;
