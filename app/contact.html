@@ -13,7 +13,7 @@
 
 </head>
 <body>
-  
+<!--   
     <div class="call-us">
       <div class="wrapper">
         <ul>
@@ -21,26 +21,28 @@
           <li>contact@andersonconstruction.mail</li>
         </ul>
       </div>
-    </div>  
+    </div>   -->
 
   <header class="site-header">
     <div class="wrapper">
       <div class="site-header__logo">
-        <img class="main-logo" src="assets/images/logo.jpg">
+        <img class="main-logo site-header__img" src="assets/images/logo.jpg">
       </div>
 
-      <div class="site-header__menu-icon"></div>
+      <div class="site-header__menu-icon">
+        <div class="site-header__menu-icon__middle"></div>
+      </div>
 
       <div class="site-header__menu-content">
         <!-- <div class="site-header__btn-container">
           <a href="#" class="btn">Get in Touch</a>
         </div> -->
-        <nav class="primary-nav primary-nav--pull-right">
+        <nav id="nav" class="primary-nav primary-nav--pull-right">
             <ul>
-              <li><a href="index.html">Home</a></li>
-              <li><a href="about.html">About Us</a></li>
-              <li><a href="work.html">Our Work</a></li>
-              <li><a href="contact.html">Contact Us</a></li>
+              <li><a  href="index.html" >Home</a></li>
+              <li><a href="about.html" >About Us</a></li>
+              <li><a href="work.html"  >Our Work</a></li>
+              <li><a class="primary-nav__active" href="contact.html" >Contact Us</a></li>
             </ul>
           </nav>
       </div>
@@ -49,10 +51,36 @@
     </div>
   </header>
 
-  
+ 
+ 
+
+   
 
   <div class="contact-info">
+      <h3>Contact Form</h3>
 
+      <div class="container">
+        <form action="/action_page.php">
+          <label for="fname">First Name</label>
+          <input type="text" id="fname" name="firstname" placeholder="Your name..">
+      
+          <label for="lname">Last Name</label>
+          <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+      
+          <label for="country">Country</label>
+          <select id="country" name="country">
+            <option value="australia">Australia</option>
+            <option value="canada">Canada</option>
+            <option value="usa">USA</option>
+          </select>
+      
+          <label for="subject">Subject</label>
+          <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+      
+          <input type="submit" value="Submit">
+        </form>
+      </div>
+      
   </div>
 
   <footer class="site-footer">

@@ -6,6 +6,7 @@ class StickyHeader {
         this.siteHeader = $(".site-header");
         this.headerTriggerElement = $(".banner__text-content");
         this.createHeaderWaypoint();
+        
         // this.createStickyHeader();
     }
 

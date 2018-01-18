@@ -20,7 +20,7 @@
     @mixin atMedium {
         position: fixed;
         padding:10px;
-        background-color:rgba($mainBlue,.7);
+        background-color:rgba($mainBlue,.3);
 
         /* &--sticky{
             position:fixed;
@@ -30,7 +30,7 @@
         } */
 
         &--dark{
-            background-color: $mainBlue;
+            background-color: rgba($mainBlue,.85);
         }
 
     }
@@ -55,7 +55,7 @@
         position:absolute;
         top:0;
         background-color: $mainBlue;
-        /* padding: 5px; */
+        padding: 3.2px;
         /* border-radius: 20px; */
         
         /* to center the logo */
@@ -69,7 +69,7 @@
             left: auto;
             
             .site-header--dark & {
-                transform: scale(.50);
+                transform: scale(.55);
             }
 
         }

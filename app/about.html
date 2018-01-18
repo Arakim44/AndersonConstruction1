@@ -13,7 +13,7 @@
 
 </head>
 <body>
-  
+<!--   
     <div class="call-us">
       <div class="wrapper">
         <ul>
@@ -21,26 +21,28 @@
           <li>contact@andersonconstruction.mail</li>
         </ul>
       </div>
-    </div>  
+    </div>   -->
 
   <header class="site-header">
     <div class="wrapper">
       <div class="site-header__logo">
-        <img class="main-logo" src="assets/images/logo.jpg">
+        <img class="main-logo site-header__img" src="assets/images/logo.jpg">
       </div>
 
-      <div class="site-header__menu-icon"></div>
+      <div class="site-header__menu-icon">
+        <div class="site-header__menu-icon__middle"></div>
+      </div>
 
       <div class="site-header__menu-content">
         <!-- <div class="site-header__btn-container">
           <a href="#" class="btn">Get in Touch</a>
         </div> -->
-        <nav class="primary-nav primary-nav--pull-right">
+        <nav id="nav" class="primary-nav primary-nav--pull-right">
             <ul>
-              <li><a href="index.html">Home</a></li>
-              <li><a href="about.html">About Us</a></li>
-              <li><a href="work.html">Our Work</a></li>
-              <li><a href="contact.html">Contact Us</a></li>
+              <li><a href="index.html" >Home</a></li>
+              <li><a class="primary-nav__active" href="about.html" >About Us</a></li>
+              <li><a href="work.html"  >Our Work</a></li>
+              <li><a href="contact.html" >Contact Us</a></li>
             </ul>
           </nav>
       </div>
@@ -49,9 +51,41 @@
     </div>
   </header>
 
-  
-        
-  
+ 
+
+  <div id="our-beginning" class="page-section">
+    <div class="wrapper">
+      <h2 class="headline headline--centered headline--light headline--b-margin-small">Honesty, Integrity, and Quality Workmanship</h2>
+      <h3 class="headline headline--centered headline--yellow headline--small headline--narrow headline--light headline--b-margin-large">Our goal then and now is </br> to provide quality <strong> on time  projects. </strong></h3>
+
+      <div class="wrapper wrapper--medium wrapper--b-margin">
+        <img sizes="(min-width: 930px)940px,100vw" srcset="assets/images/working-low-res.jpg 565w, assets/images/working.jpg 940w,assets/images/working-hi-dpi.jpg 1880w" alt="working">
+      </div>
+
+      <div class="row row--gutters">
+
+        <div class="row__medium-4 row__medium-4--larger row__b-margin-until-medium">
+          <picture>
+            <source sizes="" srcset="assets/images/working2.jpg 404w,assets/images/working2-hi-dpi.jpg 940w" media="(min-width:1020px)">
+            <source sizes="" srcset="assets/images/working2-portrait.jpg 382w, assets/images/working2-portrait-hi-dpi.jpg 592w" media="(min-width:700px)">
+            <img src="assets/images/working2-landscape.jpg" alt="working2">
+          </picture>
+        </div>
+
+        <div class="row__medium-8 row__medium-8--smaller">
+          <div class="generic-content-container">
+            <h2 class="headline headline--centered headline--no-t-margin">Why David Anderson Construction..</h2>
+            <p>David Anderson Construction Inc. is a northwestern Wisconsin based residential and commercial construction company that has been building extraordinary structures for three decades. Our quality workmanship has earned us a reputation as one of the area's premiere contractors. We specialize in ground-up construction and well as renovations, add-ons, and remodeling. We are experts in wood or steel constructions</p>
+            <p>Also check out the <a href="work.html">project page</a> where we showcase some of our work.</p>    
+          </div>
+        </div>
+      </div>
+
+
+
+    </div>
+  </div>
+
 
   <div id="members" class="page-section page-section--no-b-padding-until-large page-section--members">
     <div class="wrapper wrapper--no-padding-until-large">
