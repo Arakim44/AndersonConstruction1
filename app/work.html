@@ -13,7 +13,7 @@
 
 </head>
 <body>
-  
+<!--   
     <div class="call-us">
       <div class="wrapper">
         <ul>
@@ -21,26 +21,28 @@
           <li>contact@andersonconstruction.mail</li>
         </ul>
       </div>
-    </div>  
+    </div>   -->
 
   <header class="site-header">
     <div class="wrapper">
       <div class="site-header__logo">
-        <img class="main-logo" src="assets/images/logo.jpg">
+        <img class="main-logo site-header__img" src="assets/images/logo.jpg">
       </div>
 
-      <div class="site-header__menu-icon"></div>
+      <div class="site-header__menu-icon">
+        <div class="site-header__menu-icon__middle"></div>
+      </div>
 
       <div class="site-header__menu-content">
         <!-- <div class="site-header__btn-container">
           <a href="#" class="btn">Get in Touch</a>
         </div> -->
-        <nav class="primary-nav primary-nav--pull-right">
+        <nav id="nav" class="primary-nav primary-nav--pull-right">
             <ul>
-              <li><a href="index.html">Home</a></li>
-              <li><a href="about.html">About Us</a></li>
-              <li><a class="primary-nav__active" href="work.html">Our Work</a></li>
-              <li><a href="contact.html">Contact Us</a></li>
+              <li><a href="index.html" >Home</a></li>
+              <li><a href="about.html" >About Us</a></li>
+              <li><a class="primary-nav__active" href="work.html"  >Our Work</a></li>
+              <li><a href="contact.html" >Contact Us</a></li>
             </ul>
           </nav>
       </div>
@@ -49,7 +51,38 @@
     </div>
   </header>
 
-  
+  <div class="banner"> <!--large-hero on the example-->
+    
+    <picture>
+      <source srcset="assets/images/banner-large.jpg" media="(min-width:1200px)">
+      <source srcset="assets/images/banner-medium.jpg" media="(min-width:990px)">
+      <source srcset="assets/images/banner-small.jpg 990w, assets/images/banner-small-hi-dpi.jpg 1697w " media="(min-width:640px)">
+      <img srcset="assets/images/banner-smaller.jpg 640w, assets/images/banner-smaller-hi-dpi.jpg 1418w" class="banner__image" alt="interior">
+    </picture>
+
+    <div class="banner__text-content">
+      <div class="wrapper wrapper__banner">
+        <div class="hello">
+          <h1 class="banner__title">COME HOME TO <strong style="color:#bbe1f4">QUALITY</strong></h1>
+        </div>
+
+        <!-- <h2 class="banner__subtitle"></h2> -->
+        <p class="banner__description">Creating quality lifestyles, building stronger communities</p>
+        <p><a href="#" class="btn btn__large">Contact us Today</a></p>
+        <!-- cool button try -->
+        <!-- <div class="cool-btn">
+          <a class="cool-btn__link">
+          <span class="text">Contact us Today</span>
+          <span class="line -right"></span>
+          <span class="line -top"></span>
+          <span class="line -left"></span>
+          <span class="line -bottom"></span>
+        </a>
+      </div> -->
+
+      </div>
+    </div>
+  </div>
 
 
   <div id="our-beginning" class="page-section">
