@@ -1503,6 +1503,8 @@ a {
 
 .primary-nav {
 
+    
+
     /* a:hover, a:focus, a:active {
         color: #FFF;
         text-decoration: none;
@@ -1583,13 +1585,10 @@ a {
     }
     }
 
-.primary-nav a:hover {
+.primary-nav a:hover, .primary-nav a:active {
         background-color: #a3273c;
         color:#FFF;
-        border-radius: 10px;
-
-
-
+        border-radius: 10px
     }
 
 .call-us {

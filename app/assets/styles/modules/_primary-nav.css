@@ -54,14 +54,13 @@
     }
 
 
-    a:hover {
+    a:hover, a:active {
         background-color: $mainRed;
         color:#FFF;
-        border-radius: 10px;
-
-
-
+        border-radius: 10px
     }
+
+    
 
     /* a:hover, a:focus, a:active {
         color: #FFF;
