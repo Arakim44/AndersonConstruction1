@@ -57,4 +57,22 @@
             
         } 
     }
+
+    &__background-img-form {
+        /* background:url("/assets/images/about2.jpg") no-repeat center;
+        background-size:cover;
+        background-attachment:fixed;
+        -webkit-filter: blur(8px);
+        -moz-filter: blur(8px);
+        -o-filter: blur(8px);
+        -ms-filter: blur(8px);
+        filter: blur(8px);
+        position:absolute;
+        top:0;
+        left:0;
+        height:100%;
+        width:100%;
+        z-index:2;   
+     */
+    }
 }

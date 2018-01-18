@@ -1,0 +1,170 @@
+.form {
+ 
+    &__wrapper {
+        background:#fff;
+        width:100%;
+        max-width:100%;
+        box-sizing:border-box;
+        padding:15px;
+        margin:10% auto 0;
+        position:relative;
+        z-index:1;
+        -webkit-box-shadow:0 23px 4px -21px rgba(0, 0, 0, 0.9);
+        -moz-box-shadow:0 23px 4px -21px rgba(0, 0, 0, 0.9);
+        box-shadow:0 23px 4px -21px rgba(0, 0, 0, 0.9);
+
+        @mixin atMedium {
+            width:700px;
+        }
+    }
+
+    &__text {
+        border: none;   
+        color:$mainRed;
+        font-size: .8rem;
+        font-weight: 300;
+        max-width: 50rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+    &__container {
+        padding:15px;
+        border:1px dashed rgba($mainRed,0.3);
+    
+    }    
+    
+
+    &__wrapper h2 {
+        font-size:1.5em;
+	    line-height:1.5em;
+	    margin:0;
+    }
+
+    &__wrapper .row {
+        margin:10px -15px;
+    }
+
+    &__wrapper .row > div {
+        padding:0 15px;
+    }
+
+  
+    &__wrapper .col_half {
+
+        width:100%;
+        float:left;
+
+        @mixin atMedium {
+            width:50%;
+            float:left;
+
+        }
+    }
+
+    &__wrapper .col-med-one {
+        width:100%;
+
+        @mixin atMedium {
+            widows: 33.3333%;
+            float:left;
+        }
+    }
+
+    &__wrapper .col-large-half {
+        width:50%;
+        float:left;
+        @mixin atMedium{
+            width:50%;
+            float:left
+        }
+    }
+
+    &__wrapper label {
+        color:$mainRed;
+        display: block;
+        margin: 0 0 5px;
+    }
+
+    &__wrapper .input_field,  &__wrapper .textarea_field  {
+        position:relative;
+    }
+
+ 
+    &__wrapper .input_field > span, &__wrapper .textarea_field > span {
+        position:absolute;
+        left:0;
+        top:0;
+        color:rgba($mainRed,.5);
+        height:100%;
+        border-right:1px solid rgba($mainRed,.2);
+        text-align:center;
+        width:30px;
+    }
+
+    &__wrapper .textarea_field > span {
+        border-bottom:1px solid rgba($mainRed,.5);
+	    max-height:35px;
+
+    }
+
+
+    &__wrapper  .input_field > span > i, &__wrapper .textarea_field > span > i {
+        padding-top:12px;
+    }
+
+    &__icon {
+        color:$mainRed;
+    }
+
+    &__wrapper input[type="text"], &__wrapper input[type="email"], &__wrapper input[type="tel"],&__wrapper input[type="number"], &__wrapper select,&__wrapper textarea {
+        color:rgba($mainRed,.5);
+        width:100%;
+        padding:10px 10px 10px 35px;
+        border:1px solid rgba($mainRed,.2);
+        outline:none;
+        -webkit-transition: all 0.30s ease-in-out;
+        -moz-transition: all 0.30s ease-in-out;
+        -ms-transition: all 0.30s ease-in-out;
+        transition: all 0.30s ease-in-out;
+    }
+
+    &__wrapper textarea {
+        height:8em;
+        width: 100%;
+    }
+
+    &__wrapper input[type="text"]:focus, &__wrapper input[type="email"]:focus, &__wrapper input[type="tel"]:focus,&__wrapper select, &__wrapper textarea:focus {
+        -webkit-box-shadow:0 0 2px 1px rgba($mainBlue, 0.5);
+        -moz-box-shadow:0 0 2px 1px rgba($mainBlue, 0.5);
+        box-shadow:0 0 2px 1px rgba($mainBlue, 0.5);
+        border:1px solid $mainBlue;
+
+    }
+
+
+
+    &__wrapper input[type="submit"] {
+        background:$mainRed;
+        height:50px;
+        line-height:50px;
+        width:100%;
+        border:none;
+        outline:none;
+        cursor:pointer;
+        color:#fff;
+        font-size:1.2em;
+        -webkit-transition: all 0.30s ease-in-out;
+        -moz-transition: all 0.30s ease-in-out;
+        -ms-transition: all 0.30s ease-in-out;
+        transition: all 0.30s ease-in-out;
+    }
+
+    &__wrapper  input[type="submit"]:hover, &__wrapper  input[type="submit"]:focus {
+        background:$mainBlue;
+    }
+ 
+
+
+}

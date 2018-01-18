@@ -16,3 +16,11 @@ img {
 a {
     color:$mainBlue;
 }
+
+::placeholder {
+    font-weight: 100;
+    color:rgba($mainBlue,.5);
+
+}
+
+
