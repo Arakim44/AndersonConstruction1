@@ -1,4 +1,8 @@
 .generic-content-container {
+
+    &--ul-circle {
+        list-style-type: circle;
+    }
     p {
         line-height:1.65;
         /* font-weight:350; */
@@ -9,12 +13,15 @@
         }
 
         @mixin atLarge {
-            font-size: 1.625rem;
+            font-size: 1.325rem;
         }
        
 
       
     }
+
+
+   
 
     p a {
         font-weight: 700;

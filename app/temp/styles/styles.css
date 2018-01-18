@@ -794,6 +794,18 @@ a {
 
 .headline--centered {
         text-align: center;
+
+    }
+
+.headline--centered-only-smaller {
+        text-align: center;
+    }
+
+@media (min-width: 768px) {
+
+.headline--centered-only-smaller {
+            text-align: left
+    }
     }
 
 .headline--yellow {
@@ -804,6 +816,7 @@ a {
 .headline--small {
 
         font-size: 1.2rem;
+        font-weight:350;
     }
 
 @media (min-width: 768px) {
@@ -1000,6 +1013,10 @@ a {
             display:flex;
         }
 
+.generic-content-container--ul-circle {
+        list-style-type: circle;
+    }
+
 .generic-content-container p {
         line-height:1.65;
         /* font-weight:350; */
@@ -1022,7 +1039,7 @@ a {
 @media (min-width: 1010px) {
 
 .generic-content-container p {
-            font-size: 1.625rem
+            font-size: 1.325rem
        
 
       

@@ -16,6 +16,18 @@ gulp.task('watch', function() {
         browserSync.reload(); //reload automatically when saving html.
     });
 
+    watch('./app/about.html', function() {
+        browserSync.reload(); //reload automatically when saving html.
+    });
+
+    watch('./app/work.html', function() {
+        browserSync.reload(); //reload automatically when saving html.
+    });
+    
+    watch('./app/contact.html', function() {
+        browserSync.reload(); //reload automatically when saving html.
+    });
+    
     watch('./app/assets/styles/**/*.css', function() {
         gulp.start('cssInject'); 
     });
