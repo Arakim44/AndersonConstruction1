@@ -42,4 +42,15 @@
             background-size: cover;
         }
     }
+
+    &--portfolio {
+        background-color: #85715c;
+        color: ;
+
+        @mixin atMedium {
+            
+            background:url('/assets/images/wood-background.jpg') top center no-repeat;
+            background-size: cover;
+        }
+    }
 }

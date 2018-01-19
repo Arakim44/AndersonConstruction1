@@ -1,16 +1,18 @@
-.members {
+.portfolio {
     background-color: rgba(255,255,255,.75);
-    padding: 0 18px 0 18px;
-    margin-bottom: 98px;
-    line-height: 1.65rem;
+    padding:18px;
+    margin-bottom: 10px;
+    text-align: center;
+    /* line-height: 1.65rem; */
     font-weight: 300;
     font-size: 1.2rem;
+
     
 
     @mixin atMedium {
         margin-bottom: 0;
-        padding: 0 1.8rem 1px 1.8rem;
-        margin-bottom: 98px;
+        padding: 10px 1.8rem 10px 1.8rem;
+        margin-bottom: 40px;
         line-height: 2rem;
         font-size: 1.3rem;
         
@@ -34,6 +36,7 @@
     }
 
     &__name {
+        text-transform: uppercase;
         color: $mainRed;
         text-align: center;
         font-size:1.5rem;
@@ -42,12 +45,13 @@
     }
 
     &__subtitle {
-        color: $mainBlue;
+        padding:0;
+        color: $mainRed;
         text-align: center;
-        font-weight: 400;
+        font-weight: 300;
         font-size: 1rem;
         margin: .3rem 0 1rem;
-        text-shadow: 1px 1px 0 rgba(0,0,0,.5);
+        /* text-shadow: 1px 1px 0 rgba(0,0,0,.5); */
 
         @mixin atMedium {
             font-size: 1.25rem;

@@ -11115,6 +11115,7 @@ var mobileMenu = new _MobileMenu2.default();
 
 new _RevealOnScroll2.default((0, _jquery2.default)(".feature-item"), "85%");
 new _RevealOnScroll2.default((0, _jquery2.default)(".members"), "80%");
+new _RevealOnScroll2.default((0, _jquery2.default)(".portfolio"), "75%");
 // var revealOnScroll = new RevealOnScroll();
 
 var stickyHeader = new _StickyHeader2.default();

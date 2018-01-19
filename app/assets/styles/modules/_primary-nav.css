@@ -5,16 +5,22 @@
     }
 
     ul {
+        /* position:relative; */
         margin:0;
         padding:0;
         @mixin clearfix;
     }
     
     li{
-        left: 60%;
+
         list-style: none;
         text-align: center;
         /* margin-right:-18px; */
+        /* left: 60%; */
+        transform : translateX(5%) scale(1);
+        transition:transform .3s ease-out;
+        transform-origin: 50% 0%;
+
 
 
         @mixin atMedium {
