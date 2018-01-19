@@ -1,7 +1,7 @@
 .banner {
 
     /* background-color: rgba(0,0,0, 0.6); */
-    border-top: 10px solid $mainRed;
+    border-top: 10px solid $mainBlue;
     border-bottom: 10px solid $mainRed;
     position: relative;
     background-color:$mainBlue; 
@@ -92,7 +92,7 @@
 
    @mixin atSmall {
        font-size: 1.3rem;
-       padding-top:60px;
+       padding-top:40px;
    }
 
    @mixin atMedium {

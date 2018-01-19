@@ -19,7 +19,7 @@
     
     @mixin atMedium {
         position: fixed;
-        padding:10px;
+        padding:5px;
         background-color:rgba($mainBlue,.3);
 
         /* &--sticky{
@@ -30,7 +30,7 @@
         } */
 
         &--dark{
-            background-color: rgba($mainBlue,.85);
+            background-color: rgba($mainBlue,.95);
         }
 
     }
@@ -69,7 +69,7 @@
             left: auto;
             
             .site-header--dark & {
-                transform: scale(.55);
+                transform: scale(.42);
             }
 
         }
@@ -82,7 +82,7 @@
         height: 35px;
         position: absolute;
         z-index: 10;
-        top: 15px;
+        top: 13px;
         right:35px;
         /* background-color: $mainRed; */
         
