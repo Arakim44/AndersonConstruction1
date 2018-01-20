@@ -791,7 +791,7 @@ a {
 
 .page-section--members {
             
-            background:url('/assets/images/background-white.jpg') top center no-repeat;
+            background:url('../../assets/images/background-white.jpg') top center no-repeat;
             background-size: cover
     }
     }
@@ -805,7 +805,7 @@ a {
 
 .page-section--portfolio {
             
-            background:url('/assets/images/wood-background.jpg') top center no-repeat;
+            background:url('../../assets/images/wood-background.jpg') top center no-repeat;
             background-size: cover
     }
     }
@@ -819,7 +819,7 @@ a {
 
 .page-section--contact {
             
-            background:url('/assets/images/address-background.jpg') top center no-repeat;
+            background:url('../../assets/images/address-background.jpg') top center no-repeat;
             background-size: cover
 
     }
