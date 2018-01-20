@@ -810,6 +810,21 @@ a {
     }
     }
 
+.page-section--contact {
+        background-color: #909090;
+
+    }
+
+@media (min-width: 768px) {
+
+.page-section--contact {
+            
+            background:url('/assets/images/address-background.jpg') top center no-repeat;
+            background-size: cover
+
+    }
+    }
+
 .icons {
     max-width: 40px;
     background-color: #bbe1f4;
@@ -1696,7 +1711,7 @@ a {
     }
 
 .form__wrapper {
-        background:#fff;
+        background:rgba(255,255,255,.9);
         width:100%;
         max-width:100%;
         -webkit-box-sizing:border-box;

@@ -53,4 +53,15 @@
             background-size: cover;
         }
     }
+
+    &--contact {
+        background-color: #909090;
+
+        @mixin atMedium {
+            
+            background:url('/assets/images/address-background.jpg') top center no-repeat;
+            background-size: cover;
+        }
+
+    }
 }
