@@ -1,0 +1,60 @@
+.navbar {
+    padding-top: 100px;
+    background-color: $mainBlue;
+
+    ul {
+
+        width: 100%;
+        margin:0 auto;
+        padding: 0;
+
+    }
+
+    ul li {
+        list-style:none;
+        display: block;
+        padding: 10px;
+        text-align: center;
+    }
+
+    ul li a{
+        text-decoration: none;
+        border-radius: 5px;
+        transition:all .3s ease-out;
+    }
+
+    &__active {
+        background: $mainRed;
+        color: $mainBlue;
+        padding: 9px;
+    }
+
+
+    @mixin atMedium {
+        background-color: rgba($mainBlue, 0);
+        padding:0;
+        float: right;
+            
+        ul li {
+ 
+            display : inline-block;
+        }
+    
+        ul li a {
+            padding: 9px;
+            border-radius: 5px;
+            transition:all .3s ease-out;
+            
+        }
+    
+        ul li a:hover{
+            background: $mainRed;
+            color: $mainBlue;
+            padding: 9px;
+        }
+    
+
+    }
+
+   
+}

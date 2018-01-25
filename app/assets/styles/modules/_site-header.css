@@ -1,5 +1,5 @@
 .site-header {
-    padding:35px;
+    /* padding:35px; */
     position:absolute;
     width: 100%;
     z-index: 2;
@@ -22,12 +22,6 @@
         padding:5px;
         background-color:rgba($mainBlue,.3);
 
-        /* &--sticky{
-            position:fixed;
-            top:0;
-            width:100%;
-
-        } */
 
         &--dark{
             background-color: rgba($mainBlue,.95);
