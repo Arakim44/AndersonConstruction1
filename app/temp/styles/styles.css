@@ -652,8 +652,6 @@ a:hover {
     }
     }
 
-/* @import "modules/_cool-btn"; */
-
 .wrapper {
 
     overflow: hidden;
@@ -1357,7 +1355,7 @@ a:hover {
 /* background-color:$mainBlue; */
 
 .site-header--is-expanded {
-        background-color:#bbe1f4; 
+        background-color: rgba(187,225,244,.9); 
     }
 
 @media (min-width: 768px) {
@@ -1393,6 +1391,7 @@ a:hover {
 .site-header__logo {
         position:absolute;
         top:0;
+        left:50%;
         background-color: #bbe1f4;
         padding: 3.2px;
         /* border-radius: 20px; */
@@ -1420,18 +1419,18 @@ a:hover {
     }
             
             .site-header--dark .site-header__logo {
-                -webkit-transform: scale(.42);
-                        transform: scale(.42);
+                -webkit-transform: scale(.40);
+                        transform: scale(.40);
             }
     }
 
 .site-header__menu-icon {
-        width:40px;
-        height: 35px;
+        width:20px;
+        height: 19px;
         position: absolute;
         z-index: 10;
-        top: 20px;
-        right:35px;
+        top: 18px;
+        right:10px;
         cursor: pointer;
         -webkit-transition: color .3s ease-out;
         transition: color .3s ease-out;
@@ -1442,8 +1441,8 @@ a:hover {
             position: absolute;
             top:0;
             left:0;
-            width:40px;
-            height:5px;
+            width:20px;
+            height:3px;
             background-color:#FFF;
             -webkit-transform-origin:0 0;
                     transform-origin:0 0;
@@ -1455,10 +1454,10 @@ a:hover {
 
 .site-header__menu-icon__middle {
             position: absolute;
-            top:15px;
+            top:8px;
             left:0;
-            width:40px;
-            height:5px;
+            width:20px;
+            height:3px;
             background-color:#FFF;
             -webkit-transition: all .3s ease-out;
             transition: all .3s ease-out;
@@ -1471,8 +1470,8 @@ a:hover {
             position: absolute;
             bottom:0;
             left:0;
-            width:40px;
-            height:5px;
+            width:20px;
+            height:3px;
             background-color:#FFF;
             -webkit-transform-origin: 0 100%;
                     transform-origin: 0 100%;
@@ -1501,8 +1500,8 @@ a:hover {
         }
 
 .site-header__menu-icon--close-x::after {
-            -webkit-transform:rotate(-45deg) scaleX(1.20) translateY(4px);
-                    transform:rotate(-45deg) scaleX(1.20) translateY(4px); ;
+            -webkit-transform:rotate(-45deg) scaleX(1.25) translateY(1px);
+                    transform:rotate(-45deg) scaleX(1.25) translateY(1px); ;
         }
 
 .site-header__menu-content {
@@ -1511,7 +1510,7 @@ a:hover {
                 transform: scale(2);
         -webkit-transition: all .3 ease-out;
         transition: all .3 ease-out;
-        position: relative;
+        /* position: relative; */
         z-index:-10;
         padding-top:55px;
         /* float: left; */
@@ -1542,8 +1541,6 @@ a:hover {
 .main-logo {
     max-width:200px;
 }
-
-/* @import "modules/_primary-nav"; */
 
 .call-us {
     background-color: #a3273c; 
@@ -1820,11 +1817,9 @@ a:hover {
     }
     }
 
-/* navbar test */
-
 .navbar {
-    padding-top: 100px;
-    background-color: #bbe1f4;
+    padding-top: 50px;
+    padding-bottom: 10px;
 
    
 }
@@ -1840,7 +1835,7 @@ a:hover {
 .navbar ul li {
         list-style:none;
         display: block;
-        padding: 10px;
+        padding: 11px 0 11px 11px;
         text-align: center;
     }
 
@@ -1851,10 +1846,26 @@ a:hover {
         transition:all .3s ease-out;
     }
 
+.navbar ul li a:hover{
+        background: #a3273c;
+        color: #bbe1f4;
+        padding: 9px;
+    }
+
 .navbar__active {
         background: #a3273c;
         color: #bbe1f4;
         padding: 9px;
+    }
+
+.navbar__toggle {
+        display: block;
+        width:100%;
+        padding: 10px 20px;
+        background: #bbe1f4;
+        text-align: right;
+        color: #a3273c;
+        font-size: 26px;
     }
 
 @media (min-width: 768px) {
@@ -1866,7 +1877,11 @@ a:hover {
 
    
 }
-            
+
+        .navbar__toggle {
+            display: none;
+        }
+
         .navbar ul li {
  
             display : inline-block;
@@ -1878,11 +1893,5 @@ a:hover {
             -webkit-transition:all .3s ease-out;
             transition:all .3s ease-out;
             
-        }
-    
-        .navbar ul li a:hover{
-            background: #a3273c;
-            color: #bbe1f4;
-            padding: 9px;
         }
     }

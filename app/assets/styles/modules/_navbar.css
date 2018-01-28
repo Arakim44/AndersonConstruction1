@@ -1,6 +1,6 @@
 .navbar {
-    padding-top: 100px;
-    background-color: $mainBlue;
+    padding-top: 50px;
+    padding-bottom: 10px;
 
     ul {
 
@@ -13,7 +13,7 @@
     ul li {
         list-style:none;
         display: block;
-        padding: 10px;
+        padding: 11px 0 11px 11px;
         text-align: center;
     }
 
@@ -22,6 +22,13 @@
         border-radius: 5px;
         transition:all .3s ease-out;
     }
+    
+    ul li a:hover{
+        background: $mainRed;
+        color: $mainBlue;
+        padding: 9px;
+    }
+
 
     &__active {
         background: $mainRed;
@@ -29,12 +36,28 @@
         padding: 9px;
     }
 
+    &__toggle {
+        display: block;
+        width:100%;
+        padding: 10px 20px;
+        background: $mainBlue;
+        text-align: right;
+        color: $mainRed;
+        font-size: 26px;
+    }
+
+
+
 
     @mixin atMedium {
         background-color: rgba($mainBlue, 0);
         padding:0;
         float: right;
-            
+
+        &__toggle {
+            display: none;
+        }
+
         ul li {
  
             display : inline-block;
@@ -47,12 +70,7 @@
             
         }
     
-        ul li a:hover{
-            background: $mainRed;
-            color: $mainBlue;
-            padding: 9px;
-        }
-    
+       
 
     }
 

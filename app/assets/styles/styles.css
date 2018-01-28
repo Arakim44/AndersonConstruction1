@@ -4,7 +4,6 @@
 @import "base/_global";
 @import "modules/_banner";
 @import "modules/_btn";
-/* @import "modules/_cool-btn"; */
 @import "modules/_wrapper";
 @import "modules/_page-section";
 @import "modules/_icons";
@@ -17,10 +16,8 @@
 @import "modules/_site-footer";
 @import "modules/_site-header";
 @import "modules/_main-logo";
-/* @import "modules/_primary-nav"; */
 @import "modules/_call-us";
 @import "modules/_reveal-item";
 @import "modules/_form";
 @import "modules/_portfolio";
-/* navbar test */
 @import "modules/_navbar";
