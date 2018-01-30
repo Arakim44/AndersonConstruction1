@@ -7,6 +7,29 @@
     font-weight: 300;
     font-size: 1.2rem;
 
+
+
+    &__row:after {
+         content: "";
+        display: table;
+        clear: both;
+    }
+
+
+    &__column {
+        float:left;
+        width:25%;       
+
+    }
+
+ 
+    &__lightbox {
+        width:25%;
+        display: inline-block;
+    }
+
+
+
     
 
     @mixin atMedium {
@@ -57,5 +80,7 @@
             font-size: 1.25rem;
         }
     }
+
+   
 
 }

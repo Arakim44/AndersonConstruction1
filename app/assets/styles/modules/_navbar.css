@@ -64,7 +64,7 @@
         }
     
         ul li a {
-            padding: 9px;
+            /* padding: 9px; */
             border-radius: 5px;
             transition:all .3s ease-out;
             
