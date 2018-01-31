@@ -10,7 +10,7 @@ var mobileMenu = new MobileMenu();
 
 new RevealOnScroll($(".feature-item"),"85%");
 new RevealOnScroll($(".members"),"80%");
-new RevealOnScroll($(".lightbox"),"75%");
+new RevealOnScroll($(".portfolio__img"),"75%");
 // var revealOnScroll = new RevealOnScroll();
 
 var stickyHeader = new StickyHeader();

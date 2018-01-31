@@ -1765,16 +1765,37 @@ a:hover {
     }
 
 .portfolio {
-    background-color: rgba(255,255,255,.75);
+    background-color: rgba(255,255,255,1);
     padding:18px;
-    margin-bottom: 10px;
+    margin-bottom: 28px;
+    margin-left:auto;
+    margin-right: auto;
     text-align: center;
     /* line-height: 1.65rem; */
     font-weight: 300;
     font-size: 1.2rem;
-    position:relative;
 
 }
+
+@media (min-width: 768px) {
+
+
+        .portfolio__half {
+            display: block;
+            width:49%;
+            float:left;
+            margin-bottom: 0;
+            padding: 10px 1.8rem 10px 1.8rem;
+            margin-bottom: 40px;
+            line-height: 2rem;
+            font-size: 1.3rem;          
+            
+        }
+
+        .portfolio__second {
+            margin-left:2%;
+        }
+    }
 
 .portfolio__gallery {
         /* overflow:hidden; */
@@ -1785,27 +1806,21 @@ a:hover {
 
 .portfolio__gallery-thumb img {
         max-width:23%;
+        padding:7px;
+        border: 1px solid rgba(163,159,159,.5);
+        -webkit-transition:1s;
+        transition:1s;
 
     }
 
-@media (min-width: 768px) {
+.portfolio__gallery-thumb img:hover {
+        cursor: pointer;
+        -webkit-transform:scale(1.1);
+                transform:scale(1.1);
+    }
 
-        .portfolio__half {
-            width:47%;
-            float:left;
-            margin-bottom: 0;
-            padding: 10px 1.8rem 10px 1.8rem;
-            margin-left:auto;
-            margin-right:auto;
-            margin-bottom: 40px;
-            line-height: 2rem;
-            font-size: 1.3rem;          
-            
-        }
-
-        .portfolio__last {
-            margin-left:6%;
-        }
+.portfolio__gallery-thumb a {
+        text-decoration: none;
     }
 
 .portfolio__photo {
@@ -1823,9 +1838,19 @@ a:hover {
         text-transform: uppercase;
         color: #a3273c;
         text-align: center;
-        font-size:1.5rem;
-        font-weight: 500;
+        font-size:1.4rem;
+        font-weight: 300;
         margin:0;
+        padding-bottom:5px;
+
+    }
+
+@media (min-width: 768px) {
+
+.portfolio__name {
+            padding:0
+
+    }
     }
 
 .portfolio__subtitle {
@@ -1837,13 +1862,20 @@ a:hover {
         margin: .3rem 0 1rem;
     }
 
-/* text-shadow: 1px 1px 0 rgba(0,0,0,.5); */
-
 @media (min-width: 768px) {
 
 .portfolio__subtitle {
-            font-size: 1.25rem
+            font-size: 1.2rem
     }
+    }
+
+.portfolio__description {
+        color: #a3273c;
+        font-size: 1rem;
+        line-height: 1.2rem;
+    }
+
+@media (min-width: 768px) {
     }
 
 .navbar {

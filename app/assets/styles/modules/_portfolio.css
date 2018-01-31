@@ -1,12 +1,36 @@
 .portfolio {
-    background-color: rgba(255,255,255,.75);
+    background-color: rgba(255,255,255,1);
     padding:18px;
-    margin-bottom: 10px;
+    margin-bottom: 28px;
+    margin-left:auto;
+    margin-right: auto;
     text-align: center;
     /* line-height: 1.65rem; */
     font-weight: 300;
     font-size: 1.2rem;
-    position:relative;
+    
+
+    @mixin atMedium {
+
+
+        &__half {
+            display: block;
+            width:49%;
+            float:left;
+            margin-bottom: 0;
+            padding: 10px 1.8rem 10px 1.8rem;
+            margin-bottom: 40px;
+            line-height: 2rem;
+            font-size: 1.3rem;          
+            
+        }
+
+        &__second {
+            margin-left:2%;
+        }
+
+    }
+
 
     &__gallery {
         /* overflow:hidden; */
@@ -17,36 +41,23 @@
 
     &__gallery-thumb img {
         max-width:23%;
+        padding:7px;
+        border: 1px solid rgba(163,159,159,.5);
+        transition:1s;
 
+    }
+
+    &__gallery-thumb img:hover {
+        cursor: pointer;
+        transform:scale(1.1);
+    }
+
+    &__gallery-thumb a {
+        text-decoration: none;
     }
 
 
 
-    
-
-
-
-
-    @mixin atMedium {
-
-        &__half {
-            width:47%;
-            float:left;
-            margin-bottom: 0;
-            padding: 10px 1.8rem 10px 1.8rem;
-            margin-left:auto;
-            margin-right:auto;
-            margin-bottom: 40px;
-            line-height: 2rem;
-            font-size: 1.3rem;          
-            
-        }
-
-        &__last {
-            margin-left:6%;
-        }
-
-    }
 
     &__photo {
         border-radius:80px;
@@ -63,9 +74,15 @@
         text-transform: uppercase;
         color: $mainRed;
         text-align: center;
-        font-size:1.5rem;
-        font-weight: 500;
+        font-size:1.4rem;
+        font-weight: 300;
         margin:0;
+        padding-bottom:5px;
+
+        @mixin atMedium {
+            padding:0;
+        }
+
     }
 
     &__subtitle {
@@ -75,10 +92,17 @@
         font-weight: 300;
         font-size: 1rem;
         margin: .3rem 0 1rem;
-        /* text-shadow: 1px 1px 0 rgba(0,0,0,.5); */
 
         @mixin atMedium {
-            font-size: 1.25rem;
+            font-size: 1.2rem;
+        }
+    }
+ 
+    &__description {
+        color: $mainRed;
+        font-size: 1rem;
+        line-height: 1.2rem;
+        @mixin atMedium {
         }
     }
 
