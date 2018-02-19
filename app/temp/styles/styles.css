@@ -467,6 +467,7 @@ img {
 
 a {
     color:#373737;
+    text-decoration: none;
 }
 
 a:hover {
@@ -625,14 +626,42 @@ h1,h2,h3 {
 .banner__description{
     border: none;   
     color:#bbe1f4;
-    font-size: 1.5rem;
+    font-size: 1rem;
     font-weight: 300;
     text-shadow: 2px 2px 0 rgba(0,0,0,.1);
     max-width: 50rem;
     margin-left: auto;
     margin-right: auto;
 
+
    }
+
+@media (min-width: 530px) {
+
+.banner__description{
+        /* font-size: 1.3rem; */
+
+
+   }
+    }
+
+@media (min-width: 768px) {
+
+.banner__description{
+        font-size: 1rem
+
+
+   }
+    }
+
+@media (min-width: 1010px) {
+
+.banner__description{
+        font-size: 1.3rem
+
+
+   }
+    }
 
 @media (min-width: 530px) {
 
@@ -652,7 +681,7 @@ h1,h2,h3 {
 @media (min-width: 1010px) {
 
 .banner {
-       font-size: 2rem
+       font-size: 3rem
 }
     }
 
@@ -1166,6 +1195,10 @@ h1,h2,h3 {
         font-weight: 700;
     }
 
+.generic-content-container li {
+        line-height: 1.5;
+    }
+
 .section-title {
     /* margin: 0; */
     font-size: 1.725rem;
@@ -1639,7 +1672,7 @@ h1,h2,h3 {
         -webkit-box-sizing:border-box;
                 box-sizing:border-box;
         padding:15px;
-        margin:10% auto 0;
+        margin:10% auto ;
         position:relative;
         z-index:1;
         -webkit-box-shadow:0 23px 4px -21px rgba(0, 0, 0, 0.9);
@@ -1725,7 +1758,7 @@ h1,h2,h3 {
 .form__wrapper label {
         color:#373737;
         display: block;
-        margin: 0 0 5px;
+        margin: 5px;
     }
 
 .form__wrapper .input_field,  .form__wrapper .textarea_field  {
@@ -1758,7 +1791,7 @@ h1,h2,h3 {
     }
 
 .form__wrapper input[type="text"], .form__wrapper input[type="email"], .form__wrapper input[type="tel"], .form__wrapper input[type="number"], .form__wrapper select, .form__wrapper textarea {
-        color: rgba(163,39,60,.5);
+        color: rgba(55,55,55,.5);
         width:100%;
         padding:10px 10px 10px 35px;
         border: 1px solid rgba(55,55,55,.2);

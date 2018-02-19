@@ -7,7 +7,7 @@
         max-width:100%;
         box-sizing:border-box;
         padding:15px;
-        margin:10% auto 0;
+        margin:10% auto ;
         position:relative;
         z-index:1;
         -webkit-box-shadow:0 23px 4px -21px rgba(0, 0, 0, 0.9);
@@ -85,7 +85,7 @@
     &__wrapper label {
         color:$charcoal;
         display: block;
-        margin: 0 0 5px;
+        margin: 5px;
     }
 
     &__wrapper .input_field,  &__wrapper .textarea_field  {
@@ -120,7 +120,7 @@
     }
 
     &__wrapper input[type="text"], &__wrapper input[type="email"], &__wrapper input[type="tel"],&__wrapper input[type="number"], &__wrapper select,&__wrapper textarea {
-        color:rgba($mainRed,.5);
+        color:rgba($charcoal,.5);
         width:100%;
         padding:10px 10px 10px 35px;
         border:1px solid rgba($charcoal,.2);

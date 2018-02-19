@@ -15,6 +15,7 @@ img {
 
 a {
     color:$charcoal;
+    text-decoration: none;
 }
 
 a:hover {
