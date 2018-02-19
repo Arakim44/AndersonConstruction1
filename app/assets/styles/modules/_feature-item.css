@@ -1,6 +1,10 @@
 .feature-item {
     position: relative;
     padding-bottom: 2rem;
+
+    &--last {
+        padding-bottom: 0 ;
+    }
     
 
     @mixin atSmall {
