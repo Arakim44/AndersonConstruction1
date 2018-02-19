@@ -14,7 +14,7 @@ img {
 }
 
 a {
-    color:#565656;
+    color:$charcoal;
 }
 
 a:hover {
@@ -28,10 +28,11 @@ a:hover {
 }
 
 p {
+    font-weight: 300;
     color:$mainGrey;
 }
 
 h1,h2,h3 {
-    color:#565656;
+    color:$charcoal;
 }
 

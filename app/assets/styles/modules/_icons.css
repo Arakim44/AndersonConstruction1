@@ -1,6 +1,7 @@
 .icons {
     max-width: 40px;
     background-color: $mainBlue;
+    /* fill: $mainRed; */
     padding: 8px;
     border-width:thin;
     border-radius:10px;   

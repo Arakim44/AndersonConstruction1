@@ -39,10 +39,22 @@
     }
 
     &__gallery-thumb img {
-        max-width:24%;
+        max-width:23%;
         /* padding:5px; */
         /* border: 1px solid rgba(163,159,159,.5); */
         transition:1s;
+
+        @mixin atSmall{
+            max-width:24%;
+        }
+
+        @mixin atMedium {
+            max-width:23%;
+        }
+
+        @mixin atLarge {
+            max-width: 24%;
+        }
 
     }
 
@@ -71,7 +83,7 @@
 
     &__name {
         text-transform: uppercase;
-        color: $mainRed;
+        color: $charcoal;
         text-align: center;
         font-size:1.4rem;
         font-weight: 300;

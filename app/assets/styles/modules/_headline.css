@@ -1,6 +1,6 @@
 .headline {
-    color: #565656;
-    font-weight: 250;
+    color: $charcoal;
+    font-weight: 200;
     font-size:1.9rem;
 
 
@@ -32,7 +32,7 @@
     &--small {
 
         font-size: 1.2rem;
-        font-weight:350;
+        font-weight:200;
 
         @mixin atMedium{
             font-size: 1.875rem;

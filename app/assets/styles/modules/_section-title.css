@@ -18,7 +18,7 @@
     }
 
     &--dark {
-        color: $mainRed;
+        color: $charcoal;
         font-weight: 350;
     }
 

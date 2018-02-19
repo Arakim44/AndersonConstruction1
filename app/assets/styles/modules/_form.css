@@ -21,7 +21,7 @@
 
     &__text {
         border: none;   
-        color:$mainRed;
+        color:$charcoal;
         font-size: .8rem;
         font-weight: 300;
         max-width: 50rem;
@@ -32,7 +32,7 @@
 
     &__container {
         padding:15px;
-        border:1px dashed rgba($mainRed,0.3);
+        border:1px dashed rgba($charcoal,0.3);
     
     }    
     
@@ -83,7 +83,7 @@
     }
 
     &__wrapper label {
-        color:$mainRed;
+        color:$charcoal;
         display: block;
         margin: 0 0 5px;
     }
@@ -97,15 +97,15 @@
         position:absolute;
         left:0;
         top:0;
-        color:rgba($mainRed,.5);
+        color:rgba($charcoal,.5);
         height:100%;
-        border-right:1px solid rgba($mainRed,.2);
+        border-right:1px solid rgba($charcoal,.2);
         text-align:center;
         width:30px;
     }
 
     &__wrapper .textarea_field > span {
-        border-bottom:1px solid rgba($mainRed,.5);
+        border-bottom:1px solid rgba($charcoal,.5);
 	    max-height:35px;
 
     }
@@ -116,14 +116,14 @@
     }
 
     &__icon {
-        color:$mainRed;
+        color:$charcoal;
     }
 
     &__wrapper input[type="text"], &__wrapper input[type="email"], &__wrapper input[type="tel"],&__wrapper input[type="number"], &__wrapper select,&__wrapper textarea {
         color:rgba($mainRed,.5);
         width:100%;
         padding:10px 10px 10px 35px;
-        border:1px solid rgba($mainRed,.2);
+        border:1px solid rgba($charcoal,.2);
         outline:none;
         -webkit-transition: all 0.30s ease-in-out;
         -moz-transition: all 0.30s ease-in-out;
@@ -137,8 +137,8 @@
     }
 
     &__wrapper input[type="text"]:focus, &__wrapper input[type="email"]:focus, &__wrapper input[type="tel"]:focus,&__wrapper select, &__wrapper textarea:focus {
-        -webkit-box-shadow:0 0 2px 1px rgba($mainBlue, 0.5);
-        -moz-box-shadow:0 0 2px 1px rgba($mainBlue, 0.5);
+        -webkit-box-shadow:0 0 2px 1px rgba($mainRed, 0.5);
+        -moz-box-shadow:0 0 2px 1px rgba($mainRed, 0.5);
         box-shadow:0 0 2px 1px rgba($mainBlue, 0.5);
         border:1px solid $mainBlue;
 

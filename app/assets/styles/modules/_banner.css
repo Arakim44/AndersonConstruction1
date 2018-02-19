@@ -2,7 +2,7 @@
 
     /* background-color: rgba(0,0,0, 0.6); */
     border-top: 22px solid $mainBlue;
-    border-bottom: 10px solid $mainRed;
+    border-bottom: 10px solid $charcoal;
     position: relative;
     background-color:$mainBlue; 
 
@@ -92,8 +92,8 @@
    &__description{
     border: none;   
     color:$mainBlue;
-    font-size: 1rem;
-    font-weight: 100;
+    font-size: 1.5rem;
+    font-weight: 300;
     text-shadow: 2px 2px 0 rgba(0,0,0,.1);
     max-width: 50rem;
     margin-left: auto;
