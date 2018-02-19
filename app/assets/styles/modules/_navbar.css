@@ -13,26 +13,27 @@
     ul li {
         list-style:none;
         display: block;
-        padding: 11px 0 11px 11px;
+        padding: 16px 10px;
         text-align: center;
     }
 
     ul li a{
         text-decoration: none;
-        border-radius: 5px;
+        /* border-radius: 5px; */
         transition:all .3s ease-out;
+        padding: 16px;
     }
     
     ul li a:hover{
         background: $mainRed;
-        color: $mainBlue;
-        padding: 9px;
+        color: #fff;
+        /* padding: 9px; */
     }
 
 
     &__active {
         background: $mainRed;
-        color: $mainBlue;
+        color: #fff;
         padding: 9px;
     }
 
@@ -59,19 +60,27 @@
         }
 
         ul li {
- 
+            padding: 16px 0;
             display : inline-block;
         }
     
         ul li a {
             /* padding: 9px; */
-            border-radius: 5px;
+            /* border-radius: 5px; */
             transition:all .3s ease-out;
             
         }
     
        
 
+    }
+
+    @mixin atLarge {
+        ul li {
+            padding: 16px 10px;
+            display : inline-block;
+        }
+    
     }
 
    

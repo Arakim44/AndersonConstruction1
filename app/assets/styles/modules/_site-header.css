@@ -19,7 +19,7 @@
     
     @mixin atMedium {
         position: fixed;
-        padding:5px;
+        /* padding:5px; */
         background-color:rgba($mainBlue,.3);
 
 

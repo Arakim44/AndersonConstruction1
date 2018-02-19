@@ -7,12 +7,15 @@
   <meta name="keywords" content="Travel planning, travel bundles, travel escapes">
   <meta name="description" content="Your clarity. One trip away. We create soul restoring journeys that inspire you to be you.">
 
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href="assets/images/favicon.ico" rel="icon" type="image/x-icon" />
+
 
   <!-- build:css assets/styles/styles.css -->
   <link rel="stylesheet" href="temp/styles/styles.css">
+  <link rel="stylesheet" href="temp/styles/material-scrolltop.css">
   <!-- endbuild -->
-  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-  <link href="assets/images/favicon.ico" rel="icon" type="image/x-icon" />
+ 
 
 </head>
 <body>
@@ -56,7 +59,7 @@
         </div>
 
         <!-- <h2 class="banner__subtitle"></h2> -->
-        <p class="banner__description">Creating quality lifestyles, building stronger communities</p>
+        <!-- <p class="banner__description">Creating quality lifestyles, building stronger communities</p> -->
         <p><a href="#" class="btn btn__large">Contact us Today</a></p>
 
 
@@ -67,12 +70,12 @@
 
   <div id="our-beginning" class="page-section">
     <div class="wrapper">
-      <h2 class="headline headline--centered headline--light headline--b-margin-small">Honesty, Integrity, and Quality Workmanship</h2>
+      <!-- <h2 class="headline headline--centered headline--light headline--b-margin-small">Honesty, Integrity, and Quality Workmanship</h2>
       <h3 class="headline headline--centered headline--yellow headline--small headline--narrow headline--light headline--b-margin-large">Our goal then and now is </br> to provide quality <strong> on time  projects. </strong></h3>
 
       <div class="wrapper wrapper--medium wrapper--b-margin">
         <img sizes="(min-width: 930px)940px,100vw" srcset="assets/images/working-low-res.jpg 565w, assets/images/working.jpg 940w,assets/images/working-hi-dpi.jpg 1880w" alt="working">
-      </div>
+      </div> -->
 
       <div class="row row--gutters">
 
@@ -145,23 +148,34 @@
         
   
 
-      <div id="members" class="page-section page-section--no-b-padding-until-large page-section--members">
-          <div class="wrapper wrapper--no-padding-until-large">
-            
-            
-        
-          </div>
-      </div>
-
 
   <footer class="site-footer">
     <div class="wrapper">
       <p><span class="site-footer__text">Copyright &copy; 2018 Anderson Construction. All rights reserved.</span> <a href="#" class="btn btn__yellow">Get in Touch</a></p>
     </div>
   </footer>
+
+ 
   <!-- build:js assets/scripts/App.js  -->
   <script src="/temp/scripts/App.js"></script>
+
+   <!-- material-scrolltop button -->
+   <button class="material-scrolltop" type="button"></button>
+  <script src="/temp/scripts/material-scrolltop.js"></script>
   <!-- endbuild  -->
+
+  <!-- Initialize -->
+  <script>
+        $(document).ready(function() {
+            $('body').materialScrollTop({
+                revealElement: 'header',
+                revealPosition: 'bottom',
+                onScrollEnd: function() {
+                    console.log('Scrolling End');
+                }
+            });
+        });
+    </script>
 
 </body>
 </html>

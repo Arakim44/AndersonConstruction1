@@ -1,19 +1,26 @@
 .banner {
 
     /* background-color: rgba(0,0,0, 0.6); */
-    border-top: 10px solid $mainBlue;
+    border-top: 22px solid $mainBlue;
     border-bottom: 10px solid $mainRed;
     position: relative;
     background-color:$mainBlue; 
 
+
     &__image {
         display: block;
         padding-top:0;
+        margin-top:30px;
+
+        @mixin atSmall {
+            margin-top:0;
+        }
         }
     
 
    &__text-content {
-       padding-top: 90px;
+       margin-top: 10px;
+       padding-top: 10px;
        /* margin-top:-6.5px; */      
        transform: translateY(-50%);
        position: absolute;
@@ -23,6 +30,11 @@
        text-align:center;
        /* padding: 1.5rem 0 0; */
        background-color: rgba(0,0,0, 0.6);
+
+       @mixin atSmall {
+           margin-top:0;
+           padding-top: 30px;
+       }
 
     
 
@@ -92,7 +104,7 @@
 
    @mixin atSmall {
        font-size: 1.3rem;
-       padding-top:40px;
+       padding-top:28px;
    }
 
    @mixin atMedium {

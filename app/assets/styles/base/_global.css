@@ -14,7 +14,7 @@ img {
 }
 
 a {
-    color:$mainRed;
+    color:#565656;
 }
 
 a:hover {
@@ -27,4 +27,11 @@ a:hover {
 
 }
 
+p {
+    color:$mainGrey;
+}
+
+h1,h2,h3 {
+    color:#565656;
+}
 
