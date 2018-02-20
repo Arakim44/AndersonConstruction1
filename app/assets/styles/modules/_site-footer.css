@@ -1,10 +1,10 @@
 .site-footer {
-    background-color: $charcoal; 
-    color:#FFF;
-    padding: .5rem 0;
+    background-color: $mainRed; 
+    padding: .5rem ;
     text-align: center;
-
+    
     &__text {
+        color:#FFF;
         display:block;
         margin-bottom: 1rem;
         font-weight: 200;

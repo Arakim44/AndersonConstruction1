@@ -1401,13 +1401,13 @@ h1,h2,h3 {
     }
 
 .site-footer {
-    background-color: #373737; 
-    color:#FFF;
-    padding: .5rem 0;
+    background-color: #a3273c; 
+    padding: .5rem ;
     text-align: center;
 }
 
 .site-footer__text {
+        color:#FFF;
         display:block;
         margin-bottom: 1rem;
         font-weight: 200;
