@@ -12,7 +12,7 @@ gulp.task('watch', function() {
         }
     });
 
-    watch('./app/index.html', function() {
+    watch('./app/home.html', function() {
         browserSync.reload(); //reload automatically when saving html.
     });
 
