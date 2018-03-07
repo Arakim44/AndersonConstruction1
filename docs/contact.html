@@ -122,7 +122,7 @@
           <div class="col-large-half">
               <label for="">State</label>
               <div class="input_field"><span><i aria-hidden="true" class="fa fa-address-book form__icon"></i></span>
-                <select name="City">
+                <select name="City" required>
                     <option value="AL">AL</option>
                     <option value="AK">AK</option>
                     <option value="AR">AR</option>	
@@ -187,16 +187,16 @@
       </div>
       <div class="row">
         <div class="col_half">
-             <label>Work phone number <i>(e.g ###-###-####)</i></label>
+             <label>Work phone number </label>
              <div class="input_field"> <span><i aria-hidden="true" class="fa fa-phone form__icon"></i></span>
-               <input type="tel" name="Work-phone" placeholder="123-456-7890" pattern="[0-9]{10}" />
+               <input type="tel" name="Work-phone" placeholder="123-456-7890" required />
              </div>
         </div>
         
         <div class="col_half">
-          <label>Cell Phone Number <i>(e.g ###-###-####)</i></label>
+          <label>Cell Phone Number </i></label>
           <div class="input_field"> <span><i aria-hidden="true" class="fa fa-phone form__icon"></i></span>
-            <input type="tel" name="cell-phone" placeholder="123-456-7890" pattern="[0-9]{10}" />
+            <input type="tel" name="cell-phone" placeholder="123-456-7890" />
           </div>
         </div>
       </div>
@@ -212,7 +212,7 @@
         <div>
           <label>Message</label>
           <div class="textarea_field"> <span><i aria-hidden="true" class="fa fa-comment form__icon"></i></span>
-            <textarea cols="46" rows="3" name="Message"></textarea>
+            <textarea cols="46" rows="3" name="Message" required></textarea>
           </div>
         </div>
       </div>
