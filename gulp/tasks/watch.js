@@ -27,6 +27,10 @@ gulp.task('watch', function() {
     watch('./app/contact.html', function() {
         browserSync.reload(); //reload automatically when saving html.
     });
+
+    watch('./app/thanks.html', function() {
+        browserSync.reload(); //reload automatically when saving html.
+    });
     
     watch('./app/assets/styles/**/*.css', function() {
         gulp.start('cssInject'); 

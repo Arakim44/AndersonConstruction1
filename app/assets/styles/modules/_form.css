@@ -1,5 +1,9 @@
 .form {
 
+    &--thanks {
+        font-size: .8em;
+        font-weight: 300;
+    }
  
     &__wrapper {
         background:rgba(255,255,255,.9);

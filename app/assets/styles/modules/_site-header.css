@@ -143,12 +143,14 @@
         opacity:0;
         transform: scale(2);
         transition: all .3 ease-out;
-        /* position: relative; */
+        position: relative;
         z-index:-10;
         padding-top:55px;
-        /* float: left; */
+        margin: auto;
         left:-35%;
-        /* text-align:center; */
+        float: right;
+        /* text-align:left; */
+
 
         @mixin atMedium {
             left:0;
@@ -164,4 +166,5 @@
             transform:scale(1);
         }
     }
+
 }

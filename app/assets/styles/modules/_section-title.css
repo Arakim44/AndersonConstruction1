@@ -17,6 +17,11 @@
 
     }
 
+    &--less-margin{
+        margin:0;
+        padding:0;
+    }
+
     &--dark {
         color: $charcoal;
         font-weight: 350;

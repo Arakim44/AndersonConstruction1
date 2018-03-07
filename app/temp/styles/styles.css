@@ -570,6 +570,49 @@ h1,h2,h3 {
     }
     }
 
+.banner__text-content-thanks {
+        margin-top: 10px;
+        padding-top: 10px;
+        /* margin-top:-6.5px; */      
+        -webkit-transform: translateY(-50%);      
+                transform: translateY(-50%);
+        position: absolute;
+        top: 50%;
+        left: 0;
+        width: 100%;
+        text-align:center;
+ 
+     }
+
+/* background-color: rgba(0,0,0, 0.6); */
+
+@media (min-width: 530px) {
+
+.banner__text-content-thanks {
+            margin-top:0;
+            padding-top: 30px
+ 
+     }
+    }
+
+/* padding: 1.5rem 0 0; */
+
+@media (min-width: 768px) {
+
+.banner__text-content-thanks {
+            padding-top:60px
+ 
+     }
+    }
+
+@media (min-width: 1010px) {
+
+.banner__text-content-thanks {
+            padding: 4rem 0 0
+ 
+     }
+    }
+
 .banner__title{
       color:#FFF;
       font-weight: 300;
@@ -1223,6 +1266,11 @@ h1,h2,h3 {
     }
     }
 
+.section-title--less-margin{
+        margin:0;
+        padding:0;
+    }
+
 .section-title--dark {
         color: #373737;
         font-weight: 350;
@@ -1429,6 +1477,7 @@ h1,h2,h3 {
     z-index: 2;
     -webkit-transition: background-color .3s linear;
     transition: background-color .3s linear;
+
 }
 
 /* background-color:$mainBlue; */
@@ -1443,6 +1492,7 @@ h1,h2,h3 {
         position: fixed;
         /* padding:5px; */
         background-color: rgba(187,225,244,.3)
+
 }
 
 
@@ -1589,14 +1639,15 @@ h1,h2,h3 {
                 transform: scale(2);
         -webkit-transition: all .3 ease-out;
         transition: all .3 ease-out;
-        /* position: relative; */
+        position: relative;
         z-index:-10;
         padding-top:55px;
-        /* float: left; */
+        margin: auto;
         left:-35%;
+        float: right;
     }
 
-/* text-align:center; */
+/* text-align:left; */
 
 @media (min-width: 768px) {
 
@@ -1663,6 +1714,11 @@ h1,h2,h3 {
         opacity:1;
         -webkit-transform: scale(1);
                 transform: scale(1);
+    }
+
+.form--thanks {
+        font-size: .8em;
+        font-weight: 300;
     }
 
 .form__wrapper {
