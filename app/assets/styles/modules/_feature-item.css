@@ -1,11 +1,30 @@
 .feature-item {
     position: relative;
     padding-bottom: 2rem;
+    line-height: 1.6em;
 
+    
+    
     &--last {
         padding-bottom: 0 ;
     }
     
+    &--p p{
+        color: $blueGrey;
+        font-size: .9em;
+        text-align: center;
+        @mixin atSmall {
+          
+            text-align: left;
+        }
+
+       
+        @mixin  atMedium {
+            
+    
+        }
+
+    }
 
     @mixin atSmall {
         padding-left: 65px;
@@ -24,7 +43,7 @@
 
     &__title {
         
-        font-size: 1.5rem;
+        font-size: 1.2rem;
         font-weight: 300;
         margin-top: .7em;
         text-align: center;

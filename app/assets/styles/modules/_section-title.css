@@ -1,11 +1,16 @@
 .section-title {
     /* margin: 0; */
     font-size: 1.725rem;
-    font-weight: 200;
+    font-weight: 300;
     text-align: center;
     padding-bottom:1rem;
 
+    &--blue {
+        color:$blueDarker;
+    }
+
     &__no-project{
+        color: $blueDarker;
         font-size: 1.25rem;
         font-weight: 200;
         text-align: center;
@@ -45,11 +50,11 @@
     }
 
     @mixin atMedium {
-        font-size: 2.25rem;
+        font-size: 1.5rem;
     }
 
     @mixin atLarge {
-        font-size: 2.725rem;
+        font-size: 2rem;
     }
 
     strong{

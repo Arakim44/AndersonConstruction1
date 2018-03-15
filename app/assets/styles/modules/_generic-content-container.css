@@ -9,11 +9,11 @@
         margin: 1.8rem ;
 
         @mixin atSmall {
-            font-size: 1.125rem;
+            font-size: .7rem;
         }
 
         @mixin atLarge {
-            font-size: 1.325rem;
+            font-size: 1rem;
         }
        
 

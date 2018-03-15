@@ -466,7 +466,7 @@ img {
 }
 
 a {
-    color:#373737;
+    color:#4f626b;
     text-decoration: none;
 }
 
@@ -500,7 +500,7 @@ a:hover {
 
 p {
     font-weight: 300;
-    color:#A9A9A9;
+    color:#909090;
 }
 
 h1,h2,h3 {
@@ -756,7 +756,7 @@ h1,h2,h3 {
     overflow: hidden;
     padding-left:18px;
     padding-right:18px;
-    max-width: 1236px;
+    max-width: 950px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -859,10 +859,10 @@ h1,h2,h3 {
     padding:1.2rem 0;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 530px) {
 
 .page-section {
-        padding: 2rem 0
+        padding: 3rem 0
 }
     }
 
@@ -891,8 +891,8 @@ h1,h2,h3 {
     }
     }
 
-.page-section__red {
-        background-color: #a49b94;
+.page-section__dark {
+        background-color: #4f626b;
     }
 
 .page-section__red p {
@@ -954,8 +954,8 @@ h1,h2,h3 {
     }
 
 .headline {
-    color: #373737;
-    font-weight: 200;
+    color: #4f626b;
+    font-weight: 300;
     font-size:1.9rem;
 
     /* drop cap** */
@@ -975,7 +975,15 @@ h1,h2,h3 {
 @media (min-width: 768px) {
 
 .headline {
-        font-size: 2.875rem
+        font-size: 1.5rem
+
+}
+    }
+
+@media (min-width: 1010px) {
+
+.headline {
+        font-size:2rem
 
 }
     }
@@ -1217,7 +1225,7 @@ h1,h2,h3 {
 @media (min-width: 530px) {
 
 .generic-content-container p {
-            font-size: 1.125rem
+            font-size: .7rem
        
 
       
@@ -1227,7 +1235,7 @@ h1,h2,h3 {
 @media (min-width: 1010px) {
 
 .generic-content-container p {
-            font-size: 1.325rem
+            font-size: 1rem
        
 
       
@@ -1245,12 +1253,17 @@ h1,h2,h3 {
 .section-title {
     /* margin: 0; */
     font-size: 1.725rem;
-    font-weight: 200;
+    font-weight: 300;
     text-align: center;
     padding-bottom:1rem;
 }
 
+.section-title--blue {
+        color:#9cbccc;
+    }
+
 .section-title__no-project{
+        color: #9cbccc;
         font-size: 1.25rem;
         font-weight: 200;
         text-align: center;
@@ -1299,14 +1312,14 @@ h1,h2,h3 {
 @media (min-width: 768px) {
 
 .section-title {
-        font-size: 2.25rem
+        font-size: 1.5rem
 }
     }
 
 @media (min-width: 1010px) {
 
 .section-title {
-        font-size: 2.725rem
+        font-size: 2rem
 }
     }
 
@@ -1334,10 +1347,30 @@ h1,h2,h3 {
 .feature-item {
     position: relative;
     padding-bottom: 2rem;
+    line-height: 1.6em;
 }
 
 .feature-item--last {
         padding-bottom: 0 ;
+    }
+
+.feature-item--p p{
+        color: #e3ebf0;
+        font-size: .9em;
+        text-align: center;
+
+    }
+
+@media (min-width: 530px) {
+
+.feature-item--p p{
+          
+            text-align: left
+
+    }
+    }
+
+@media (min-width: 768px) {
     }
 
 @media (min-width: 530px) {
@@ -1360,7 +1393,7 @@ h1,h2,h3 {
 
 .feature-item__title {
         
-        font-size: 1.5rem;
+        font-size: 1.2rem;
         font-weight: 300;
         margin-top: .7em;
         text-align: center;
