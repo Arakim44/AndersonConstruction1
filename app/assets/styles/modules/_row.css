@@ -26,7 +26,7 @@
         padding-right:65px;
 
         @mixin atSmall{
-            padding-right: 30px;
+            padding-right: 60px;
         }
     }
 
@@ -51,7 +51,7 @@
     }
 
 
-    @mixin atMedium{
+    @mixin atSmall{
 
         &__medium-3 {
             float: left;

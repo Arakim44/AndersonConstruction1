@@ -1,4 +1,9 @@
 .generic-content-container {
+    /* padding-top: 1em; */
+
+    @mixin atMedium {
+        margin-left: 1em;
+    }
 
     &--ul-circle {
         list-style-type: circle;
@@ -6,15 +11,17 @@
     p {
         line-height:1.65;
         /* font-weight:350; */
-        margin: 1.8rem ;
+        margin: 1.3rem 0;
 
         @mixin atSmall {
-            font-size: .7rem;
-        }
-
-        @mixin atLarge {
             font-size: 1rem;
         }
+
+        @mixin atMedium {
+            font-size:1.1rem;
+        }
+
+        
        
 
       
@@ -27,7 +34,36 @@
         font-weight: 700;
     }
 
+    ul{
+
+        /* padding-left:0; */
+       
+        /* text-align: center; */
+    }
+
+    &--logo-img {
+        display: block;
+        margin-left: auto;
+        margin-right:auto;
+        width: 50%;
+
+        @mixin atSmall {
+            width:70%;
+        }
+    }
+
     li {
-        line-height: 1.5;
+        /* list-style: none; */
+        font-weight: 300;
+        line-height:1.8;
+
+        @mixin atSmall {
+            line-height: 1.8;
+        }
+
+        @mixin atLarge {
+            line-height: 3;
+
+        }
     }
 }

@@ -1,6 +1,5 @@
 .banner {
 
-    /* background-color: rgba(0,0,0, 0.6); */
     border-top: 22px solid $mainBlue;
     border-bottom: 10px solid $charcoal;
     position: relative;
@@ -39,7 +38,7 @@
     
 
        @mixin atMedium {
-           padding-top:60px;
+           padding-top:40px;
        }
 
        @mixin atLarge{
