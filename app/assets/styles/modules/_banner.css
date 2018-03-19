@@ -120,6 +120,20 @@
 
    }
 
+   &__description-large {
+    border: none;   
+    color:$mainBlue;
+    font-size: 2rem;
+    font-weight: 300;
+    /* text-shadow: 2px 2px 0 rgba(0,0,0,.1); */
+    max-width: 50rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:.5em;
+    
+
+   }
+
    &__description{
     border: none;   
     color:$mainBlue;
@@ -129,7 +143,9 @@
     max-width: 50rem;
     margin-left: auto;
     margin-right: auto;
+   
 
+  
     @mixin atSmall {
         /* font-size: 1.3rem; */
     }

@@ -665,6 +665,20 @@ h1,h2,h3 {
    }
     }
 
+.banner__description-large {
+    border: none;   
+    color:#bbe1f4;
+    font-size: 2rem;
+    font-weight: 300;
+    /* text-shadow: 2px 2px 0 rgba(0,0,0,.1); */
+    max-width: 50rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:.5em;
+    
+
+   }
+
 .banner__description{
     border: none;   
     color:#bbe1f4;
@@ -2011,7 +2025,7 @@ h1,h2,h3 {
     }
 
 .portfolio__gallery-thumb img {
-        max-width:23%;
+        max-width:23.8%;
         /* padding:5px; */
         /* border: 1px solid rgba(163,159,159,.5); */
         -webkit-transition:1s;
@@ -2030,7 +2044,7 @@ h1,h2,h3 {
 @media (min-width: 768px) {
 
 .portfolio__gallery-thumb img {
-            max-width:23%
+            max-width:23.5%
 
     }
     }
@@ -2038,7 +2052,7 @@ h1,h2,h3 {
 @media (min-width: 1010px) {
 
 .portfolio__gallery-thumb img {
-            max-width: 24%
+            max-width: 23.8%
 
     }
     }
