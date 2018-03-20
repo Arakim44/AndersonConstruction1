@@ -1,16 +1,16 @@
 .members {
     background-color: #fff;
-    padding: 0 18px 0 18px;
+    padding:18px;
     margin-bottom: 98px;
     line-height: 1.65rem;
     font-weight: 300;
-    font-size: 1.2rem;
+    font-size: .9rem;
     
 
     @mixin atMedium {
         margin-bottom: 0;
-        padding: 0 1.8rem 1px 1.8rem;
-        margin-bottom: 98px;
+        padding: 1.8rem;
+        margin-bottom: 120px;
         line-height: 2rem;
         font-size: .9rem;
         

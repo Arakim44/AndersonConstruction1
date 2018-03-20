@@ -11,7 +11,7 @@ var mobileMenu = new MobileMenu();
 
 new RevealOnScroll($(".feature-item"),"85%");
 new RevealOnScroll($(".members"),"80%");
-new RevealOnScroll($(".portfolio__img"),"85%");
+new RevealOnScroll($(".portfolio__img"),"60%");
 // var revealOnScroll = new RevealOnScroll();
 
 var stickyHeader = new StickyHeader();
