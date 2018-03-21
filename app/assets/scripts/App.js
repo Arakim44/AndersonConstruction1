@@ -10,8 +10,8 @@ import Modal from './modules/Modal';
 var mobileMenu = new MobileMenu();
 
 new RevealOnScroll($(".feature-item"),"85%");
-new RevealOnScroll($(".members"),"80%");
-new RevealOnScroll($(".portfolio__img"),"60%");
+new RevealOnScroll($(".members"),"90%");
+new RevealOnScroll($(".portfolio__img"),"90%");
 // var revealOnScroll = new RevealOnScroll();
 
 var stickyHeader = new StickyHeader();

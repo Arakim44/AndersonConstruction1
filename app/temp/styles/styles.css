@@ -466,7 +466,7 @@ img {
 }
 
 a {
-    color:#4f626b;
+    color:#223644;
     text-decoration: none;
 }
 
@@ -509,8 +509,8 @@ h1,h2,h3 {
 
 .banner {
 
-    border-top: 22px solid #bbe1f4;
-    border-bottom: 10px solid #373737;
+    border-top: 73px solid #bbe1f4;
+    border-bottom: 10px solid #14212a;
     position: relative;
     background-color:#bbe1f4;
 }
@@ -905,7 +905,7 @@ h1,h2,h3 {
     }
 
 .page-section__dark {
-        background-color: #4f626b;
+        background-color: #223644;
     }
 
 .page-section__red p {
@@ -967,8 +967,23 @@ h1,h2,h3 {
         padding: 6.5px;
     }
 
+.icons--circle{
+        color:#fff;
+        border-radius: 50%;
+        margin: 0.15em;
+        background-color:#223644;
+        padding: 0.04em 0.3em;
+        font-size: 2em;
+        -webkit-transition:all .3s ease-out;
+        transition:all .3s ease-out;
+    }
+
+.icons--circle:hover{
+        background-color:#909090;
+    }
+
 .headline {
-    color: #4f626b;
+    color: #223644;
     font-weight: 300;
     font-size:1.9rem;
 
@@ -1621,7 +1636,7 @@ h1,h2,h3 {
 
 .site-header__logo {
         position:absolute;
-        top:0;
+        top:2;
         left:50%;
         background-color: #bbe1f4;
         padding: 3.2px;
@@ -1660,8 +1675,8 @@ h1,h2,h3 {
         height: 19px;
         position: absolute;
         z-index: 10;
-        top: 18px;
-        right:10px;
+        top: 24px;
+        right:14px;
         cursor: pointer;
         -webkit-transition: color .3s ease-out;
         transition: color .3s ease-out;
@@ -1775,33 +1790,111 @@ h1,h2,h3 {
 }
 
 .call-us {
-    background-color: #a3273c; 
+    background-color: #14212a; 
     color:#FFF;
-    padding: .5rem 0;    
-    /* margin: 0px; */
-    /* padding: 0px; */
-    font-size: 13px;
-    /* display: inline-block; */
-    text-align:center;
+    font-weight:200;
+    padding-top:.1px;
+    padding-bottom:.1px;
+
+    
+
+
+
 
 }
 
-.call-us ul {
-        margin:0;
-        padding:0;
+.call-us--right{
+        padding-top:2em;
     }
 
-.call-us ul::after {
-        content:"";
-        clear:both;
-        display:table;
+.call-us--foot {
+        padding:2em;
+
     }
 
-.call-us li{ 
-        /* text-align: center; */
+.call-us--foot h4, .call-us h3, .call-us h2, .call-us address, .call-us a, .call-us th{
+        /* font-size: 1.3em; */
+        color:#909090;
+        text-align: center;
+    }
+
+.call-us--foot h4{
+        font-size: 1.3em;
+        font-weight:500;
+        margin:0 0 1em;
+    }
+
+.call-us--foot h3{
+        margin: 0;
+        font-size:1.2em;
+        font-weight: 300;
+        /* text-transform: uppercase; */
+    }
+
+.call-us--foot h3:first-child{
+        margin-bottom:1em;
+    }
+
+.call-us--foot h2 {
+        font-size:1em;
+        font-weight:300;
+    }
+
+.call-us--foot address{
+        font-weight: 300;
+        margin: 2em 0;
+        font-size: .9em;
+        font-style: normal;
+    }
+
+.call-us--foot span {
+        text-align: center;
+        display:block;
+        margin-top: .5em;
+        font-size: .9em;
+        font-weight: 200;
+    }
+
+@media (min-width: 768px) {
+        
+        .call-us--foot h4, .call-us h3, .call-us h2, .call-us address, .call-us span, .call-us a{ 
+            text-align: left;
+        }
+
+        
+    .call-us--right {
+        padding-left:5em;         
+        display:block;
+         
+    }
+    }
+
+.call-us--content a{
+        color:#fff;
+    }
+
+.call-us--content ul {
+        margin: 0;
+    }
+
+.call-us--content li{
+        font-size:.8em;
+        display:block;
         list-style: none;
-        float:left;
-        padding-right:20px;
+        padding-left:0;
+    }
+
+@media (min-width: 768px) {
+
+.call-us--content li{
+            font-size:.9em;
+            display: inline;
+            padding-right: 2em
+    }
+    }
+
+.call-us--content li:last-child{
+        padding-top:6px;
     }
 
 .reveal-item {
@@ -1847,7 +1940,7 @@ h1,h2,h3 {
 .form__text {
         border: none;   
         color:#373737;
-        font-size: .8rem;
+        font-size: 1rem;
         font-weight: 300;
         max-width: 50rem;
         margin-left: auto;

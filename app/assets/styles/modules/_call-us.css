@@ -1,25 +1,114 @@
 .call-us {
-    background-color: $mainRed; 
+    background-color: $black; 
     color:#FFF;
-    padding: .5rem 0;    
-    /* margin: 0px; */
-    /* padding: 0px; */
-    font-size: 13px;
-    /* display: inline-block; */
-    text-align:center; 
+    font-weight:200;
+    padding-top:.1px;
+    padding-bottom:.1px;
+
+    &--right{
+        padding-top:2em;
+    }
 
 
-    ul {
-        margin:0;
-        padding:0;
-        @mixin clearfix;
+    &--foot {
+        padding:2em;
+
+    }
+
+    &--foot h4, h3, h2, address,a, th{
+        /* font-size: 1.3em; */
+        color:$mainGrey;
+        text-align: center;
+    }
+
+    &--foot h4{
+        font-size: 1.3em;
+        font-weight:500;
+        margin:0 0 1em;
     }
     
-    li{ 
-        /* text-align: center; */
-        list-style: none;
-        float:left;
-        padding-right:20px;
+    &--foot h3{
+        margin: 0;
+        font-size:1.2em;
+        font-weight: 300;
+        /* text-transform: uppercase; */
     }
+    &--foot h3:first-child{
+        margin-bottom:1em;
+    }
+    &--foot h2 {
+        font-size:1em;
+        font-weight:300;
+    }
+    
+    &--foot address{
+        font-weight: 300;
+        margin: 2em 0;
+        font-size: .9em;
+        font-style: normal;
+    }
+
+    &--foot span {
+        text-align: center;
+        display:block;
+        margin-top: .5em;
+        font-size: .9em;
+        font-weight: 200;
+    }
+
+        
+    @mixin atMedium {
+        
+        &--foot h4, h3, h2, address,span,a{ 
+            text-align: left;
+        }
+
+        
+    &--right {
+        padding-left:5em;         
+        display:block;
+         
+    }
+    
+ 
+        
+    }
+
+
+    
+
+
+    &--content a{
+        color:#fff;
+    }
+
+    &--content ul {
+        margin: 0;
+    }
+
+
+    &--content li{
+        font-size:.8em;
+        display:block;
+        list-style: none;
+        padding-left:0;
+ 
+        
+        @mixin atMedium {
+            font-size:.9em;
+            display: inline;
+            padding-right: 2em;
+            
+        }
+    }
+
+    &--content li:last-child{
+        padding-top:6px;
+    }
+
+    
+
+
+
 
 }
