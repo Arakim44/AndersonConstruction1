@@ -37,3 +37,9 @@ h1,h2,h3 {
     color:$charcoal;
 }
 
+ul, li {
+    margin:0;
+    padding:0;
+
+}
+

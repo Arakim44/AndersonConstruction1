@@ -507,9 +507,15 @@ h1,h2,h3 {
     color:#373737;
 }
 
+ul, li {
+    margin:0;
+    padding:0;
+
+}
+
 .banner {
 
-    border-top: 73px solid #bbe1f4;
+    border-top: 56px solid #bbe1f4;
     border-bottom: 10px solid #14212a;
     position: relative;
     background-color:#bbe1f4;
@@ -1571,6 +1577,16 @@ h1,h2,h3 {
     text-align: center;
 }
 
+.site-footer--ara {
+        font-size: .6em;
+        text-transform: uppercase;
+    }
+
+.site-footer--ara a{
+        color:#909090;
+        /* transition:all .3s ease-out; */
+    }
+
 .site-footer__text {
         color:#FFF;
         display:block;
@@ -1600,7 +1616,7 @@ h1,h2,h3 {
 /* background-color:$mainBlue; */
 
 .site-header--is-expanded {
-        background-color: rgba(187,225,244,.9); 
+        background-color: rgba(187,225,244,1); 
     }
 
 @media (min-width: 768px) {
@@ -1675,7 +1691,7 @@ h1,h2,h3 {
         height: 19px;
         position: absolute;
         z-index: 10;
-        top: 24px;
+        top: 17px;
         right:14px;
         cursor: pointer;
         -webkit-transition: color .3s ease-out;
@@ -1793,8 +1809,8 @@ h1,h2,h3 {
     background-color: #14212a; 
     color:#FFF;
     font-weight:200;
-    padding-top:.1px;
-    padding-bottom:.1px;
+    padding-top:8px;
+    padding-bottom:8px;
 
     
 
@@ -1805,6 +1821,25 @@ h1,h2,h3 {
 
 .call-us--right{
         padding-top:2em;
+
+    }
+
+@media (min-width: 768px) {
+
+.call-us--right{
+
+            padding-left:5em;         
+            display:block
+
+    }
+    }
+
+@media (min-width: 1010px) {
+
+.call-us--right{
+            padding-left:8em
+
+    }
     }
 
 .call-us--foot {
@@ -1860,13 +1895,6 @@ h1,h2,h3 {
         .call-us--foot h4, .call-us h3, .call-us h2, .call-us address, .call-us span, .call-us a{ 
             text-align: left;
         }
-
-        
-    .call-us--right {
-        padding-left:5em;         
-        display:block;
-         
-    }
     }
 
 .call-us--content a{
@@ -2221,9 +2249,20 @@ h1,h2,h3 {
 .navbar {
     padding-top: 50px;
     padding-bottom: 10px;
+    position:relative;
+    left:13px;
 
    
 }
+
+@media (min-width: 530px) {
+
+.navbar {
+        left:-23px
+
+   
+}
+    }
 
 .navbar ul {
 

@@ -2,11 +2,22 @@
     background-color: $black; 
     color:#FFF;
     font-weight:200;
-    padding-top:.1px;
-    padding-bottom:.1px;
+    padding-top:8px;
+    padding-bottom:8px;
 
     &--right{
         padding-top:2em;
+
+        @mixin atMedium {
+
+            padding-left:5em;         
+            display:block;
+        }
+
+        @mixin atLarge {
+            padding-left:8em;
+        }
+
     }
 
 
@@ -63,12 +74,7 @@
             text-align: left;
         }
 
-        
-    &--right {
-        padding-left:5em;         
-        display:block;
-         
-    }
+
     
  
         

@@ -1,6 +1,14 @@
 .navbar {
     padding-top: 50px;
     padding-bottom: 10px;
+    position:relative;
+    left:13px;
+    
+    @mixin atSmall {
+        left:-23px;
+    }
+     
+
 
     ul {
 
