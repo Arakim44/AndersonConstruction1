@@ -2206,7 +2206,7 @@ ul, li {
         text-transform: uppercase;
         color: #373737;
         text-align: center;
-        font-size:1.4rem;
+        font-size:1.3rem;
         font-weight: 300;
         margin:0;
         padding-bottom:5px;
@@ -2216,6 +2216,7 @@ ul, li {
 @media (min-width: 768px) {
 
 .portfolio__name {
+            /* font-size: 1.3em; */
             padding:0
 
     }
