@@ -15,7 +15,7 @@
         }
 
         @mixin atLarge {
-            padding-left:8em;
+            padding-left:13em;
         }
 
     }

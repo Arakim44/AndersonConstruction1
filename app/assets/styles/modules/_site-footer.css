@@ -2,26 +2,38 @@
     background-color: $mainRed; 
     padding: .5rem ;
     text-align: center;
+    letter-spacing:.01em;
+    line-height: 1.2em;
+    font-size:.9em;
+
 
     
 
 
     &--ara {
-        font-size: .6em;
+        text-align: center;
+        color:$mainBlue;
+        font-size: .5em;
         text-transform: uppercase;
+        font-weight: 100;
+    }
+
+    &--ara--p{
+        margin-top: 0;
+
     }
     
     &--ara a{
-        color:$mainGrey;
+        color:$mainBlue;
         /* transition:all .3s ease-out; */
     } 
         
 
     
     &__text {
-        color:#FFF;
+        color:$mainBlue;
         display:block;
-        margin-bottom: 1rem;
+        margin-bottom: .85rem;
         font-weight: 200;
 
         @mixin atMedium {

@@ -128,9 +128,15 @@
 
 
 
+    &--padding-t {
+        @mixin atSmall{
+
+            padding-top: 1em;
+        }
+    }
 
     /* begin equal height rules */
-
+    
     &--equal-height-at-medium {
         @mixin atMedium {
             display: flex;

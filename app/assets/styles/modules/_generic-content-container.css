@@ -1,6 +1,10 @@
 .generic-content-container {
     /* padding-top: 1em; */
 
+    /* &--org {
+        max-width: 800px;
+    } */
+
     @mixin atMedium {
         margin-left: 1em;
     }
@@ -18,7 +22,12 @@
         }
 
         @mixin atMedium {
-            font-size:1.1rem;
+            font-size:.85rem;
+        }
+
+        @mixin atLarge {
+            font-size:1rem;
+            line-height: 2.5em;
         }
 
         
@@ -35,8 +44,9 @@
     }
 
     ul{
-
-        /* padding-left:0; */
+        margin-left:18px;
+ 
+        padding-bottom: 1em;
        
         /* text-align: center; */
     }
@@ -46,23 +56,25 @@
         margin-left: auto;
         margin-right:auto;
         width: 50%;
-
-        @mixin atSmall {
-            width:70%;
-        }
+        /* max-width: 280px; */
     }
 
     li {
         /* list-style: none; */
+        /* float: left; */
         font-weight: 300;
         line-height:1.8;
 
         @mixin atSmall {
             line-height: 1.8;
         }
+        @mixin atMedium {
+            font-size:.8em;
+        }
 
         @mixin atLarge {
             line-height: 3;
+            font-size:1em;
 
         }
     }

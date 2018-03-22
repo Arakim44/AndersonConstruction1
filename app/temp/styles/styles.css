@@ -498,7 +498,7 @@ a:hover {
 
 }
 
-p {
+p { 
     font-weight: 300;
     color:#909090;
 }
@@ -775,7 +775,7 @@ ul, li {
     overflow: hidden;
     padding-left:18px;
     padding-right:18px;
-    max-width: 950px;
+    max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -1023,9 +1023,12 @@ ul, li {
 }
     }
 
-.headline--centered {
-        text-align: center;
+@media (min-width: 530px) {
 
+.headline--centered {
+            text-align: center
+
+    }
     }
 
 .headline--centered-only-smaller {
@@ -1213,6 +1216,14 @@ ul, li {
         }
     }
 
+@media (min-width: 530px) {
+
+.row--padding-t {
+
+            padding-top: 1em
+    }
+    }
+
 /* begin equal height rules */
 
 @media (min-width: 768px) {
@@ -1247,7 +1258,9 @@ ul, li {
             display:flex;
         }
 
-/* padding-top: 1em; */
+/* &--org {
+        max-width: 800px;
+    } */
 
 @media (min-width: 768px) {
 
@@ -1255,6 +1268,8 @@ ul, li {
         margin-left: 1em
 }
     }
+
+/* padding-top: 1em; */
 
 .generic-content-container--ul-circle {
         list-style-type: circle;
@@ -1286,7 +1301,20 @@ ul, li {
 @media (min-width: 768px) {
 
 .generic-content-container p {
-            font-size:1.1rem
+            font-size:.85rem
+
+        
+       
+
+      
+    }
+    }
+
+@media (min-width: 1010px) {
+
+.generic-content-container p {
+            font-size:1rem;
+            line-height: 2.5em
 
         
        
@@ -1300,8 +1328,9 @@ ul, li {
     }
 
 .generic-content-container ul{
-
-        /* padding-left:0; */
+        margin-left:18px;
+ 
+        padding-bottom: 1em;
        
         /* text-align: center; */
     }
@@ -1311,17 +1340,12 @@ ul, li {
         margin-left: auto;
         margin-right:auto;
         width: 50%;
-    }
-
-@media (min-width: 530px) {
-
-.generic-content-container--logo-img {
-            width:70%
-    }
+        /* max-width: 280px; */
     }
 
 .generic-content-container li {
         /* list-style: none; */
+        /* float: left; */
         font-weight: 300;
         line-height:1.8;
     }
@@ -1333,10 +1357,18 @@ ul, li {
     }
     }
 
+@media (min-width: 768px) {
+
+.generic-content-container li {
+            font-size:.8em
+    }
+    }
+
 @media (min-width: 1010px) {
 
 .generic-content-container li {
-            line-height: 3
+            line-height: 3;
+            font-size:1em
     }
     }
 
@@ -1518,14 +1550,16 @@ ul, li {
 
 }
 
-@media (min-width: 768px) {
+@media (min-width: 530px) {
 
 .members {
-        margin-bottom: 0;
+        margin-left:20px;
+        margin-right:20px;
+        /* margin-bottom: 0; */
         padding: 1.8rem;
         margin-bottom: 120px;
         line-height: 2rem;
-        font-size: .9rem
+        font-size: 1rem
 
 }
     }
@@ -1575,22 +1609,33 @@ ul, li {
     background-color: #a3273c; 
     padding: .5rem ;
     text-align: center;
+    letter-spacing:.01em;
+    line-height: 1.2em;
+    font-size:.9em;
 }
 
 .site-footer--ara {
-        font-size: .6em;
+        text-align: center;
+        color:#bbe1f4;
+        font-size: .5em;
         text-transform: uppercase;
+        font-weight: 100;
+    }
+
+.site-footer--ara--p{
+        margin-top: 0;
+
     }
 
 .site-footer--ara a{
-        color:#909090;
+        color:#bbe1f4;
         /* transition:all .3s ease-out; */
     }
 
 .site-footer__text {
-        color:#FFF;
+        color:#bbe1f4;
         display:block;
-        margin-bottom: 1rem;
+        margin-bottom: .85rem;
         font-weight: 200;
     }
 
@@ -1837,7 +1882,7 @@ ul, li {
 @media (min-width: 1010px) {
 
 .call-us--right{
-            padding-left:8em
+            padding-left:13em
 
     }
     }
@@ -2176,7 +2221,7 @@ ul, li {
 @media (min-width: 1010px) {
 
 .portfolio__gallery-thumb img {
-            max-width: 23.8%
+            max-width: 24%
 
     }
     }
@@ -2207,7 +2252,7 @@ ul, li {
         color: #373737;
         text-align: center;
         font-size:1.3rem;
-        font-weight: 300;
+        font-weight: 400;
         margin:0;
         padding-bottom:5px;
 
@@ -2226,7 +2271,7 @@ ul, li {
         padding:0;
         color: #a3273c;
         text-align: center;
-        font-weight: 300;
+        font-weight: 400;
         font-size: 1rem;
         margin: .3rem 0 1rem;
     }
@@ -2234,7 +2279,7 @@ ul, li {
 @media (min-width: 768px) {
 
 .portfolio__subtitle {
-            font-size: 1.2rem
+            font-size: 1rem
     }
     }
 

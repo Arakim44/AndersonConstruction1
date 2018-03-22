@@ -7,12 +7,14 @@
     font-size: .9rem;
     
 
-    @mixin atMedium {
-        margin-bottom: 0;
+    @mixin atSmall {
+        margin-left:20px;
+        margin-right:20px;
+        /* margin-bottom: 0; */
         padding: 1.8rem;
         margin-bottom: 120px;
         line-height: 2rem;
-        font-size: .9rem;
+        font-size: 1rem;
         
 
     }
